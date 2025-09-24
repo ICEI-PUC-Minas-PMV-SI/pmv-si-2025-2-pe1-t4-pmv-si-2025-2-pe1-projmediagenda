@@ -25,26 +25,40 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito | Responsável | Artefato Criado |
-|------|------------------------|------------|-----------------|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario| ... | tarefas.html |
-|RF-002| A aplicação deve ter uma interface prática e intuitiva| ... | interface.html |
-|RF-003| A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login | ... | login.html |
-|RF-004| A aplicação deve seguir um padrão de cores verde,cinza,azul,branco para sua interface| ... | Cores.css |
-|RF-005| Deve ser possivel acompanhar os resultados é o niel de aprenddizado do cliente| ... |  resultados    |
-|RF-006| A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario| ... | Calendario.html |
-|RF-007| A aplicação deve ter uma área de anotações  | ... |   Anotações.html|
-|RF-008| A aplicação deve ter uma area para plantões  ... |  plantões.html |
-|RF-009| A aplicação deve ter recursos interativos para provas e quizzes interativos | ... |  interações.css |
+|ID    | Descrição do Requisito                                                                                      |    Responsável              | Artefato Criado |
+|------|-------------------------------------------------------------------------------------------------------------|-----------------------------|-----------------|
+|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario                               | ...                         |  tarefas.html   |
+|RF-002| A aplicação deve ter uma interface prática e intuitiva                                                      | ...                         | interface.html  |
+|RF-003| A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login | ...                         |  login.html     |
+|RF-004| A aplicação deve seguir um padrão de cores verde,cinza,azul,branco para sua interface                       | ...                         | Cores.css       |
+|RF-005| Deve ser possivel acompanhar os resultados é o nivel de aprendizado do cliente                              | ...                         |  resultados     |
+|RF-006| A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario                | ...                         | Calendario.html |
+|RF-007| A aplicação deve ter uma área de anotações                                                                  | ...                         |  Anotações.html |
+|RF-008| A aplicação deve ter uma area para plantões                                                                 | ...                         | plantões.html   |
+|RF-009| A aplicação deve ter recursos interativos para provas e quizzes interativos                                 | ...                         | interações.css  |
 
 
 ## Descrição das estruturas:
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+                                     
+ Anotações
+| **Nome**    |     **Tipo**     |   **Descrição**                             | **Exemplo**                                        |
+|-------------|------------------|---------------------------------------------|----------------------------------------------------|
+| id          | Numero (inteiro) | Identificador único da tarefa/evento        | 2                                                  |
+| titulo      | Texto            | Título da tarefa/evento                     | Reunião de planejamento                            |
+| descricao   | Texto            | Descrição detalhada da tarefa               |Reunião com a equipe para falar sobre os exames     |
+| data        | Data             | Data do evento                              | 18/09/2025                                         |
+| hora        | Texto            | Hora do evento                              | 14:30                                              |
+| tipo        | Texto            | Tipo do evento (tarefa, lembrete, plantão)  | lembrete                                           |
+| usuarioId   | Numero (inteiro) | Identificador do usuário dono da tarefa     | 2                                                  |
+
+## Estrutura do usuário
+| **Nome**    |     **Tipo**     |   **Descrição**                             | **Exemplo**                                        |
+|-------------|------------------|---------------------------------------------|----------------------------------------------------|
+| id          | Numero (inteiro) | Identificador único do usuário              | 3                                                  |
+| Nome        | Texto            | Nome completo do usuário                    | Gabriel Fonseca Santos                             |
+| email       | Texto            | E-mail do usuário                           | gabriel182@gmail.com                               |
+| senha       | texto            | Senha criptografada do usuário              | ******                                             |
+| Aprendizado | Texto            | Nivel de aprendizado atual do usuário       | Intermediário                                      |
+
 
