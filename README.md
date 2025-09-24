@@ -1,4 +1,4 @@
-# Título do Projeto
+# MediAgenda
 
 `CURSO: Sistemas de Informação`
 
@@ -6,20 +6,22 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A MediAgenda é uma ferramenta digital inspirada no Google Agenda, visando atender às necessidades específicas de estudantes de Medicina, residentes e médicos recém-formados.
+Oferecendo recursos que auxiliem na organização de plantões, aulas teóricas, práticas clínicas, compromissos acadêmicos e do trabalho. A proposta visa otimizar a gestão do tempo, permitir o acompanhamento das atividades de forma clara e acessível e contribuir para a produtividade, equilíbrio e qualidade de vida dos usuários.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Lucas Marques Zica 
+* Cayuri Domingues de Souza 
+* Erick Luca Moreira Santos  
+* Iuri Jefferson Aparecido de Paiva 
+* Nicolas Messias Esperidon
 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
 # Planejamento
 
