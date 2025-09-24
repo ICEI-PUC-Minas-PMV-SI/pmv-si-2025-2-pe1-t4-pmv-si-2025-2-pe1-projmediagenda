@@ -27,8 +27,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | João | index.html |
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês | Ana Paula | cadastro-noticia.html |
+|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario| ... | tarefas.html |
+|RF-002| A aplicação deve ter uma interface prática e intuitiva| ... | interface.html |
+|RF-003| A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login | ... | login.html |
+|RF-004| A aplicação deve seguir um padrão de cores verde,cinza,azul,branco para sua interface| ... | Cores.css |
+|RF-005| Deve ser possivel acompanhar os resultados é o niel de aprenddizado do cliente| ... |  resultados    |
+|RF-006| A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario| ... | Calendario.html |
+|RF-007| A aplicação deve ter uma área de anotações  | ... |   Anotações.html|
+|RF-008| A aplicação deve ter uma area para plantões  ... |  plantões.html |
+|RF-009| A aplicação deve ter recursos interativos para provas e quizzes interativos | ... |  interações.css |
+
 
 ## Descrição das estruturas:
 
