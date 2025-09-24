@@ -17,6 +17,7 @@ Oferecendo recursos que auxiliem na organização de plantões, aulas teóricas,
 * Erick Luca Moreira Santos  
 * Iuri Jefferson Aparecido de Paiva 
 * Nicolas Messias Esperidon
+* Henrique Pádua França Lommes
 
 
 ## Orientador
