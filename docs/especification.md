@@ -1,44 +1,44 @@
 # Especificações do Projeto
+A presente seção tem como objetivo detalhar a definição do problema e a proposta de solução a partir da perspectiva do usuário. Para isso, foram utilizados métodos de levantamento de requisitos centrados no usuário, que permitem compreender suas necessidades e transformar essas demandas em funcionalidades claras para o sistema.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Primeiramente, elaborou-se o diagrama de personas, representando de forma simplificada os principais perfis de usuários do sistema, tais como estudantes de Medicina, médicos recém-formados e residentes. Em seguida, foram descritas as histórias de usuários, utilizando a técnica User Story no formato “Eu como [perfil] desejo [funcionalidade] para [benefício]”. Esse recurso possibilitou traduzir expectativas em cenários reais de uso, garantindo maior alinhamento entre a solução proposta e a rotina dos usuários.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+Posteriormente, foram definidos os requisitos funcionais e não funcionais, responsáveis por estabelecer tanto as funcionalidades que o sistema deve oferecer quanto as características de qualidade que devem ser atendidas. Para essa etapa, foi empregada a técnica de levantamento e classificação de requisitos, atribuindo-se prioridades que orientam o desenvolvimento.
 
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
-
+Por fim, foram consideradas as restrições do projeto, que delimitam o escopo e orientam as decisões técnicas. Entre elas, destacam-se o prazo de entrega restrito ao final do semestre, a impossibilidade de desenvolvimento de um módulo de backend, a ausência de integração com calendários externos, a não implementação de mecanismos avançados de segurança e a utilização exclusiva de ferramentas gratuitas ou de código aberto devido à inexistência de recursos financeiros. Essas limitações garantem a viabilidade da solução dentro do contexto acadêmico em que está inserida.
 ## Personas
+| ![Foto da Persona](./img/persona2.jpg) | *Rafaela Mattos<br><br>Idade:* 19 anos<br>*Profissão:* Estudante de Medicina <br>*Localização:* Brasil<br>*Objetivo:* Organizar seus estudos e gerenciar melhor o tempo |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+| *Descrição* | *Dores* | *Expectativas* |
+|---------------|-----------|------------------|
+| Rafaela é uma estudante de medicina que se sente desanimada e perdida com a quantidade de matérias e tarefas. Ela gostaria de se organizar melhor nos estudos, mas sente dificuldade por não ter uma visão clara do que precisa fazer. | - Não sabe como organizar todos os estudos e tarefas<br>- Considera a gestão do tempo complicada e cansativa<br>- Acha difícil encontrar um método claro e eficiente de estudo<br>- Sente ansiedade por perder prazos ou conteúdos importantes | - Conseguir organizar melhor todos os estudos e tarefas<br>- Ter um método claro e fácil de acompanhar para estudar<br>- Encontrar uma forma prática de gerenciar o tempo e atividades |
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| ![Foto da Persona](./img/persona1.jpg) | *Pietra Silva<br><br>Idade:* 25 anos<br>*Profissão:* Médica recém-formada<br>*Localização:* Brasil<br>*Objetivo:* Organizar agenda |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| *Descrição* | *Dores* | *Expectativas* |
+|---------------|-----------|------------------|
+| Pietra é uma médica recém-formada que precisa organizar plantões e compromissos. Ela quer gerenciar melhor sua agenda, mas sente dificuldade em controlar horários e tarefas. | - Não consegue organizar plantões e compromissos<br>- Acha difícil visualizar toda a rotina de forma clara<br>- Considera a gestão da agenda complicada e cansativa<br>- Dificuldade em priorizar compromissos importantes | - Conseguir organizar plantões e compromissos de forma prática<br>- Ter uma visão clara de toda a rotina diária e semanal<br>- Reduzir a sobrecarga e tornar a gestão da agenda mais eficiente|
 
+| ![Foto da Persona](./img/persona3.jpg) | *Ana Clara<br><br>Idade:* 35 anos<br>*Profissão:* Residente de Medicina<br>*Localização:* Brasil<br>*Objetivo:* Acesso rápido a protocolos clínicos e guias de conduta |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+| *Descrição* | *Dores* | *Expectativas* |
+|---------------|-----------|------------------|
+| Ana é uma residente de medicina que precisa consultar protocolos de emergência rapidamente durante plantões. Ele quer se sentir seguro ao tomar decisões críticas, mas sente dificuldade em acessar informações de forma prática. | - Não consegue acessar protocolos de emergência de forma rápida<br>- Acha difícil ter todas as informações organizadas e acessíveis<br>- Tem medo de cometer erros por falta de referência clara<br>- Sente insegurança na hora de tomar decisões críticas | - Conseguir consultar protocolos de forma ágil e prática<br>- Ter todas as informações organizadas em um só lugar<br>- eduzir o risco de erros durante atendimentos emergenciais |
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas formas identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Rafaella mattos(Estudante de Medicina)|Organizar meus cronogramas de provas e trabalhos.|Não perder prazo de entrega          |
+|Rafaella mattos(Estudante de Medicina)|Um jeito rápido e prático de estudar para minhas provas.|Conseguir revizar matéria de forma rapida |
+|Pietra Silva(recém-formada)|Formas de apoio para situações de emergência|agilizar meus processos|
+|Pietra Silva(recém-formada)|Organizar minha agenda|Não me esquer dos plantões e consultas|
+|Ana Clara(Residente de Medicina)|Acompanhar meu aprendizado e registrá-lo.|Acompanhar minha evolução, e melhorar nos pontos negativos.|
+|Ana Clara(Residente de Medicina)|Consultar protocolos de emergência de forma rápida|Quero sentir seguro na hora de tomar as decisões.|
 
 ## Requisitos
 
@@ -48,32 +48,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+|RF-001|Permitir que o residente consulte protocolos de emergência de forma rápida. | ALTA |  
+|RF-002|Registrar e acompanhar o progresso de aprendizado do residente.| MÉDIA | 
+|RF-003|Organização do cronograma de provas e trabalho.| ALTA |
+|RF-004|Disponibilizar recursos de revisão para provas, incluindo quizzes interativos.| MÉDIA |
+|RF-005|O sistema deve oferecer interface prática e intuitiva.| ALTA |
+|RF-006|O sistema deve ser rápido e confiável em situações de emergência.| MÉDIA |
+|RF-007|Ter formas de acompanhar os resultados é o nível de aprendizado.| ALTA |
+|RF-008|Incluir um calendário para marcação dos prazos.| ALTA |
+|RF-009|Classificação de atividades por cores ou categorias (plantões, aulas, provas, compromissos pessoais).| ALTA |
+|RF-010|Área de anotações rápidas para registro de informações durante plantões ou estudos.| ALTA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
+|RNF-001|O sistema deve carregar as telas em até 4 segundos em condições normais de uso. | MÉDIA | 
+|RNF-002|O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho. | ALTA | 
+|RNF-003|O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edge).| ALTA |
+|RNF-004|O sistema deve ser totalmente responsivo.| ALTA |
+|RNF-005|Deve funcionar em dispositivos móveis e desktops.| BAIXA |
+|RNF-006|O acesso ao sistema deve ser protegido por autenticação de usuário.| ALTA |
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -82,10 +78,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|03| O sistema não fará integração com outros calendários ou aplicativos de terceiros|
+|04| A aplicação não contará com recursos de segurança avançados|
+|05| Não haverá recursos financeiros destinados à aquisição de softwares pagos|
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
