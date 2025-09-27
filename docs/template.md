@@ -1,13 +1,8 @@
-# Template padrão do site
-
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
-
-## Design
+## Design e Template padrão para o site
 
 O layout geral (cabeçalho, navegação, etc.) seguirá o mesmo padrão em todas as páginas; apenas o conteúdo principal será alterado de acordo com a tela selecionada. E a logo do sistema será posicionada no canto superior esquerdo em todas as telas, conforme ilustrado na imagem anexada.
 
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/411f07bd-caff-4dd5-8f14-f6336d0097bb" />
 
 ## Cores
 
