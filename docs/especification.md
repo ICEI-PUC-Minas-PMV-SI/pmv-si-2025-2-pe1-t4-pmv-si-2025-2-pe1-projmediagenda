@@ -48,28 +48,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001|Permitir que o residente consulte protocolos de emergência de forma rápida. | ALTA |  
-|RF-002|Registrar e acompanhar o progresso de aprendizado do residente.| MÉDIA | 
-|RF-003|Organização do cronograma de provas e trabalho.| ALTA |
-|RF-004|Disponibilizar recursos de revisão para provas, incluindo quizzes interativos.| MÉDIA |
-|RF-005|O sistema deve oferecer interface prática e intuitiva.| ALTA |
-|RF-006|O sistema deve ser rápido e confiável em situações de emergência.| MÉDIA |
-|RF-007|Ter formas de acompanhar os resultados é o nível de aprendizado.| ALTA |
-|RF-008|Incluir um calendário para marcação dos prazos.| ALTA |
-|RF-009|Classificação de atividades por cores ou categorias (plantões, aulas, provas, compromissos pessoais).| ALTA |
-|RF-010|Área de anotações rápidas para registro de informações durante plantões ou estudos.| ALTA |
+|RF-001|A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario. | ALTA |  
+|RF-002|A aplicação deve ter uma interface prática e intuitiva| MÉDIA | 
+|RF-003|A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login.| ALTA |
+|RF-004|A aplicação deve seguir um padrão de cores para sua interface.| MÉDIA |
+|RF-005|Deve ser possivel acompanhar os resultados é o nivel de aprendizado do cliente .| ALTA |
+|RF-006|A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario.| MÉDIA |
+|RF-007|A aplicação deve ter uma área de anotações.| ALTA |
+|RF-008|A aplicação deve ter uma area para plantões .| ALTA |
+|RF-009|A aplicação deve ter recursos interativos para provas e quizzes interativo.| ALTA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001|O sistema deve carregar as telas em até 4 segundos em condições normais de uso. | MÉDIA | 
-|RNF-002|O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho. | ALTA | 
-|RNF-003|O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edge).| ALTA |
-|RNF-004|O sistema deve ser totalmente responsivo.| ALTA |
-|RNF-005|Deve funcionar em dispositivos móveis e desktops.| BAIXA |
-|RNF-006|O acesso ao sistema deve ser protegido por autenticação de usuário.| ALTA |
+|RNF-001|Suporte para outros indiomas . | MÉDIA | 
+|RNF-002|Ser compativel com todos os modelos de tela . | MÉDIA | 
+|RNF-003|Integrar calendarios externos.| BAIXA |
+|RNF-004|O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho o.| ALTA |
+|RNF-005|Login multifator.| BAIXA |
+|RNF-006|Deve funcionar em dispositivos móveis e desktops.| MÉDIA |
+|RNF-007|O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edg)| ALTA |
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -78,7 +78,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-|03| O sistema não fará integração com outros calendários ou aplicativos de terceiros|
+|03| Não será utlizado nehuma outra linguagem alem de html,css e JavaScript |
 |04| A aplicação não contará com recursos de segurança avançados|
 |05| Não haverá recursos financeiros destinados à aquisição de softwares pagos|
 

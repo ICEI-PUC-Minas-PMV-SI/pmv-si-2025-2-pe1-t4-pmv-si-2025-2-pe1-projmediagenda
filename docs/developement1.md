@@ -35,12 +35,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-007 | A aplicação deve ter uma área de anotações                                                                  | ...                         |Anotações.html   |
 |RF-008 | A aplicação deve ter uma area para plantões                                                                 | ...                         |plantões.html    |
 |RF-009 | A aplicação deve ter recursos interativos para provas e quizzes interativos                                 | ...                         |interações.css   |
-|RNF-010| Suporte para outros indiomas                                                                                | ...                         |Tradução.js      |
-|RNF-011| Ser compativel com todos os modelos de tela                                                                 | ...                         |telas.html       |
-|RNF-012| Integrar calendarios externos                                                                               | ...                         |CalendarioEX.html|
-|RNF-013| suporte para mais de 50 usuaruios ao mesmo tempo                                                            | ...                         |Suporte50        |
-|RNF-014| login multifator                                                                                            | ...                         |Login.html/css/js|
-|RNF-015| Envio sms para avisos                                                                                       | ...                         |Smsnotifcação    |
+|RNF-001| Suporte para outros indiomas                                                                                | ...                         |Tradução.js      |
+|RNF-002| Ser compativel com todos os modelos de tela                                                                 | ...                         |telas.html       |
+|RNF-003| Integrar calendarios externos                                                                               | ...                         |CalendarioEX.html|
+|RNF-004| O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho      | ...                         | Suporte         |
+|RNF-005| login multifator                                                                                            | ...                         |Login.html/css/js|
+|RNF-006| Deve funcionar em dispositivos móveis e desktops                                                            | ...                         |funcionabilidade |
+|RNF-007| O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edg)      | ...                         |portabilidade    |
 
 
 ## Descrição das estruturas:
@@ -144,7 +145,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | id                | Numero (inteiro) | Identificador único da integração                 | 3                                                  |
 | TipoCalendario    | Texto            | Tipo de calendário externo                        | Google Calendar                                    |
 | Url               | Texto            | URL do calendário externo                         | https://calendar.google.com/calendar/ical/...      |
-| EventosSincronizados | Numero (inteiro) | Quantidade de eventos sincronizados            | 15                                                 |
+|Eventos_Sincronos  | Numero (inteiro) | Quantidade de eventos sincronizados               | 15                                                 |
 | UsuarioId         | Numero (inteiro) | Identificador do usuário                          | 2                                                  |
 
 ## Suporte Multi-usuário
@@ -166,13 +167,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | DataExpiracao     | Data             | Data de expiração do código                       | 18/06/2024 14:35                                   |
 | Status            | Texto            | Status do código                                  | pendente                                           |
 
-## Notificações SMS
+## Compatibilidade Navegadores
 | **Nome**          | **Tipo**         | **Descrição**                                     | **Exemplo**                                        |
 |-------------------|------------------|---------------------------------------------------|----------------------------------------------------|
-| id                | Numero (inteiro) | Identificador único da notificação                | 6                                                  |
-| UsuarioId         | Numero (inteiro) | Identificador do usuário destinatário             | 3                                                  |
-| Telefone          | Texto            | Número de telefone para envio                     | +5511999999999                                     |
-| Mensagem          | Texto            | Texto da mensagem SMS                             | Lembrete: Plantão hoje às 14h                      |
-| DataEnvio         | Data             | Data e hora do envio                              | 18/06/2024 10:00                                   |
-| Status            | Texto            | Status do envio                                   | enviado                                            |
-
+| id                | Numero (inteiro) | Identificador único do navegador                  | 6                                                  |
+| Navegador         | Texto            | Nome do navegador compatível                      | Google Chrome                                      |
+| VersaoMinima      | Texto            | Versão mínima suportada                           | 90                                                 |
+| UserAgent         | Texto            | Padrão do user agent                              | Mozilla/5.0 (Windows NT 10.0; Win64; x64)          |
+| Suporte           | Texto            | Nível de suporte                                  | completo                                           |
