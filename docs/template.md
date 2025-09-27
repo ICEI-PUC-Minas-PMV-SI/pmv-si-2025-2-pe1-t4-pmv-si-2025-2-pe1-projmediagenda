@@ -17,21 +17,17 @@ A paleta de cores utilizada em nosso projeto de interface, foi das cores anexada
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+Dentro das funções de nosso site, as fontes utilizadas em: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+
+Titulo da página: Montserrat, tamanhos 15 e 34;
+Título de cada seção: Open Sans, tamanho 15 e 38;
+Rótulo de componente de corpo de texto: Montserrat, tamanhos 12, 15 e 20.
 
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+Os ícones que serão utilizados, serão: ícone de 'pessoa' para sinalizar onde o usuário deve digitar seu Nome, ícone de '@' que mostra ao usuário onde ele deverá escrever seu E-mail, ícone de 'cadeado' que sinaliza onde o usuário deve digitar/criar sua Senha de Acesso e, por fim, ícone de 'calendário' que serve para informar sua Data de Nascimento.
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+Para uma visualização melhor, os ícones citados acima, estão todos presentes na imagem anexada a seguir:
 
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4c2b70d-78a6-4bf1-9c0a-90c726549650" />
