@@ -1,54 +1,86 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+ Estudantes de medicina, residentes e médicos recém-formados costumam ter uma rotina cheia, dedicando muito tempo a plantões, aulas teóricas e práticas clínicas. Para lidar com esse cenário, é essencial gerenciar bem o tempo, para garantir bons resultados acadêmicos e profissionais, e também cuidar da saúde física e mental. 
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+ No mercado de ferramentas digitais, faltam opções feitas especialmente para quem atua na área médica. Ferramentas comuns como o Google Agenda não conseguem atender às necessidades específicas desse público, como organizar plantões e compromissos clínicos. Sem uma tecnologia específica, muitos acabam usando ferramentas que não funcionam bem, o que pode ocasionar em conflitos de agenda e esquecimento.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+ Pensando nisso, o projeto MediAgenda foi criado para preencher essa lacuna, oferecendo um sistema de organização feito para a rotina dos médicos e estudantes de medicina. A ideia é ajudar esses profissionais a gerenciar melhor o tempo e, assim, melhorar seu bem-estar e qualidade de vida.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+ O cenário exigente enfrentado por médicos recém formados, residentes e estudantes de medicina, pode ocasionar falhas constantes e frustrações na tentativa de conciliar vida acadêmica, vida profissional e, o mais importante, sua qualidade de vida. Presenciamos muitos médicos sobrecarregados que trabalham em postos de saúde e à noite fazem plantão, podendo resultar em 24h trabalhadas e repetição constante dessa rotina, ocasionando em problemas graves de saúde no futuro. 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+ Devido a essa exaustão, e a falta de ferramentas para auxiliar nas organizações de seus trabalhos acadêmicos e profissionais, temos uma lacuna que pode ser preenchida através de um software específico para auxiliar os profissionais da saúde e estudantes de medicina a terem uma rotina mais leve conciliando trabalho, vida acadêmica e bem-estar. 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral: Desenvolver um software para auxiliar e organizar, vida pessoal, trabalho, e estudo, dos médicos e estudantes da área da saúde
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivo específico:
+	- Disponibilizar um calendário otimizado para a rotina médica, permitindo a classificação de atividades por categorias como plantões, aulas e provas e o tempo dedicado a cada uma delas.
+	- Implementar recursos de estudo e revisão, como acesso rápido a protocolos de emergência.
+	- Oferecer ferramentas para o registro e acompanhamento do progresso de aprendizado do usuário.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+ Esse projeto tem o objetivo de auxiliar os profissionais da saúde e estudantes de medicina a terem uma rotina mais leve e organizada e também pensando na saúde e bem-estar desses profissionais para que não tenham uma vida sobrecarregada e doentes por excesso de exigências profissionais e acadêmicas.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+ Pesquisas apontam que diversos médicos já usaram drogas para aguentar/suportar essa rotina exausta, como registrado na Revista Médica de Minas Gerais: "No entanto, observa-se aumento da prevalência da dependência de drogas entre esses profissionais, devido a várias situações como: estresse, extensas jornadas de trabalho e o fácil acesso aos medicamentos." "Vários estudos mostram que de 10 a 15% dos profissionais de saúde farão uso indevido de drogas durante sua carreira e, na especialidade médica, 6 a 8% dos médicos têm transtorno por uso de substâncias, e quando se trata de álcool, atinge aproximadamente 14%.5"
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+ Pensando também no quesito da saúde, como a própria Cardiologista Caroline Langaro, de 31 anos notou problemas de saúde um mês antes de entrar férias: Ainda estava na residência em Cardiologia, “Demorei para perceber, pois era tanto trabalho, tanta correria, que acabei esquecendo de mim”.
+Apresentado  na O Globo : "Cerca de 40% dos médicos no Brasil apresentam quadro de transtorno mental, segundo estudo feito pela Afya, maior hub de educação e soluções para a prática médica do país."
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+
+Referências
+BOTALLO, Ana. 40% dos médicos no Brasil sofrem com algum tipo de transtorno mental, mostra novo levantamento. O Globo, 30 ago. 2024. Disponível em: https://oglobo.globo.com/saude/noticia/2024/08/30/40percent-dos-medicos-no-brasil-sofrem-com-algum-tipo-de-transtorno-mental-mostra-novo-levantamento.ghtml. Acesso em: 27 set. 2025.
+
+CARNEIRO, Leonardo; CASTRO, Maíra; MORAES, Eduardo. Uso de substâncias psicoativas entre médicos: uma revisão. Revista Médica de Minas Gerais, v. 20, n. 4, 2010. Disponível em: https://rmmg.org/artigo/detalhes/96. Acesso em: 27 set. 2025.
+
+SAÚDE do Médico: discurso de vida saudável deve estar alinhado à prática. Revista Ampla, 11 ago. 2022. Disponível em: https://revistaampla.com.br/saude-do-medico-discurso-de-vida-saudavel-deve-estar-alinhado-a-pratica/. Acesso em: 27 set. 2025.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo é composto por estudantes de medicina, residentes e médicos recém-formados no Brasil. Destaca-se nesse grupo uma rotina de alta pressão que exige o gerenciamento simultâneo de estudos teóricos, atividades práticas, estágios e plantões com cargas horárias extensas. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Diagrama de Persona
+Persona: A Residente Sobrecargada
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nome: Dr. Ana Souza, 27 anos
+
+Perfil: Residente do primeiro ano (R1) de Cirurgia Geral em um hospital universitário.
+
+Objetivos:
+
+Absorver o máximo de conhecimento prático durante a residência.
+
+Manter um bom desempenho acadêmico sem comprometer a saúde mental e física.
+
+Ter clareza sobre sua escala de plantões, aulas e compromissos com antecedência.
+
+Dores e Frustrações:
+
+"Minha agenda é um caos. Uso o calendário do celular, um caderno para anotações de estudo e já perdi compromissos pessoais por pura desorganização."
+
+"Sinto que não tenho controle sobre meu tempo e vivo em constante estado de exaustão devido à alta carga de trabalho e à privação de sono."
+
+"Ferramentas comuns de calendário não se adaptam à minha escala de turnos, que muda constantemente e tem regras complexas."
+
+Mapa de Stakeholders
+Usuários:
+
+Primários: Estudantes de Medicina, Médicos Residentes (Persona: Dr. Ana Souza), Médicos Recém-formados.
+
+Ambiente Acadêmico/Profissional:
+
+Preceptores/Chefes de Serviço: Médicos sêniores que orientam e avaliam os residentes.
+
+Coordenação do Programa de Residência/Curso: Responsáveis pela estrutura acadêmica e escalas.
+
+Instituição (Hospital/Universidade): Interessada no desempenho e bem-estar de seus profissionais e alunos.
+
+Outras Partes Interessadas:
+
+Pacientes: Indiretamente afetados pela performance e estado de saúde dos médicos.
+
+Familiares e Amigos: Afetados pela rotina exigente e ausência do profissional.
