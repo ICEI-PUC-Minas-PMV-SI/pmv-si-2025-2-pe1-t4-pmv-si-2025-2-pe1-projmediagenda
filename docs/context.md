@@ -1,6 +1,6 @@
 # Introdução
 
- Estudantes de medicina, residentes e médicos recém-formados costumam ter uma rotina cheia, dedicando muito tempo a plantões, aulas teóricas e práticas clínicas. Para lidar com esse cenário, é essencial gerenciar bem o tempo, para garantir bons resultados acadêmicos e profissionais, e também cuidar da saúde física e mental. 
+ A alta carga horária e a diversidade de atividades exigem organização, disciplina e gestão eficiente do tempo para garantir não apenas o bom desempenho acadêmico e profissional, mas também a manutenção da saúde física e mental dos usuários da área de Medicina. 
 
  No mercado de ferramentas digitais, faltam opções feitas especialmente para quem atua na área médica. Ferramentas comuns como o Google Agenda não conseguem atender às necessidades específicas desse público, como organizar plantões e compromissos clínicos. Sem uma tecnologia específica, muitos acabam usando ferramentas que não funcionam bem, o que pode ocasionar em conflitos de agenda e esquecimento.
 
