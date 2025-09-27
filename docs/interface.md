@@ -21,7 +21,7 @@ Apresenta uma visão geral do MediAgenda, explicando sua proposta de ajudar estu
 
 Página destinada para o usuário acessar sua conta ou criar um novo cadastro. Garante segurança e personalização, permitindo que cada médico mantenha seus dados, atividades e resultados organizados de forma individual.
 
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/a276ea61-6043-4023-979d-afe131d51a6f" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4c2b70d-78a6-4bf1-9c0a-90c726549650" />
 
 ### Calendário
 
