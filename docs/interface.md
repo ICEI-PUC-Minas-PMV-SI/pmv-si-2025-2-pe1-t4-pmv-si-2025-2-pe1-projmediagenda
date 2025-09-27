@@ -1,9 +1,9 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+O projeto de interface de nosso sistema, foi feito utilizando o Canva, que é uma ferramenta de design de interface colaborativa. Utilizamos este Software para montagem de interface do sistema, ou seja, a conclusão final de como será nosso sistema em relação a suas telas.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Nossos arquivos do projeto de interface, com todas as telas do sistema e como o mesmo será, são os anexados abaixo:
 
 ## User Flow
 
