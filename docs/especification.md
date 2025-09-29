@@ -56,7 +56,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006|A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario.| MÉDIA |
 |RF-007|A aplicação deve ter uma área de anotações.| ALTA |
 |RF-008|A aplicação deve ter uma area para plantões .| ALTA |
-|RF-009|A aplicação deve ter recursos interativos para provas e quizzes interativo.| ALTA |
+RF-009 |A aplicação deve ter um quiz psicologico com acompanhamento do resultado.| ALTA |
 
 
 ### Requisitos não Funcionais

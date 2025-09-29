@@ -34,11 +34,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-006 | A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario                | ...                         |Calendario.html  |
 |RF-007 | A aplicação deve ter uma área de anotações                                                                  | ...                         |Anotações.html   |
 |RF-008 | A aplicação deve ter uma area para plantões                                                                 | ...                         |plantões.html    |
-|RF-009 | A aplicação deve ter recursos interativos para provas e quizzes interativos                                 | ...                         |interações.css   |
+|RF-009 | A aplicação deve ter um quiz psicologico com acompanhamento do resultado                                    | ...                         |quiz.html        |
 |RNF-001| Suporte para outros indiomas                                                                                | ...                         |Tradução.js      |
 |RNF-002| Ser compativel com todos os modelos de tela                                                                 | ...                         |telas.html       |
-|RNF-003| Integrar calendarios externos                                                                               | ...                         |CalendarioEX.html|
-|RNF-004| O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho      | ...                         | Suporte         |
+|RNF-003| Integrar calendarios externos                                                                               | ...                         |CalendarioEX.js  |
+|RNF-004| O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho      | ...                         |Suporte         |
 |RNF-005| login multifator                                                                                            | ...                         |Login.html/css/js|
 |RNF-006| Deve funcionar em dispositivos móveis e desktops                                                            | ...                         |funcionabilidade |
 |RNF-007| O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edg)      | ...                         |portabilidade    |
@@ -88,16 +88,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Observações | String           | observações    importantes                  | "plantão de urgência, pegar as fichas melhores"    |
 | Usuário id  | Número (inteiro) | Id do usuario que cadastrou                 | 1                                                  |
 
-## Quiz/Provas Interativas
+## Quiz psicologico
 | **Nome**          | **Tipo**         | **Descrição**                                     | **Exemplo**                            |
 |-------------------|------------------|---------------------------------------------------|----------------------------------------|
 | id                | Numero (inteiro) | Identificador único do quiz                       | 2                                      |
-| Titulo            | Texto            | Título do quiz/prova                              | Quiz de Cardiologia Básica             |
-| Descrição         | Texto            | Descrição detalhada do quiz                       | Avaliação  fisiologia cardíaca         |
-| Disciplina        | Texto            | Disciplina/área do conhecimento                   | Medicina                               |
+| Titulo            | Texto            | Titulo do quiz psicologico                        | Como foi seu dia?                      |
 | TempoLimite       | Numero (inteiro) | Tempo limite em minutos para realização           | 30                                     |
-| Dificuldade       | Texto            | Nível de dificuldade (fácil, médio, difícil)      | médio                                  |
-| UsuarioId         | Numero (inteiro) | Identificador do usuário criador do quiz          | 2                                      |
+| UsuarioId         | Numero (inteiro) | Identificador do usuário                          | 2                                      |
 
 ## Configurações de Interface
 | **Nome**          | **Tipo**         | **Descrição**                                     | **Exemplo**                            |
@@ -116,9 +113,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | id                | Numero (inteiro) | Identificador único do resultado                  | 6                                      |
 | UsuarioId         | Numero (inteiro) | Identificador do usuário                          | 1                                      |
 | QuizId            | Numero (inteiro) | Identificador do quiz realizado                   | 5                                      |
-| Nota              | Decimais&inteiros| Nota obtida no quiz                               | 8.5,9,9.5                              |
-| DataRealizacao    | Data             | Data da realização do quiz                        | 18/06/2024                             |
-| NivelAprendizado  | Texto            | Nível de aprendizado calculado                    | Dificil                                |
+| Resultado         | Numero (inteiro) | resultado da avaliação                            | 7/10                                   |    
+| DataRealizacao    | Data             | Data da realização do quiz psicologico            | 18/06/2025                             |
 
 ## Suporte para Idiomas
 | **Nome**          | **Tipo**         | **Descrição**                                     | **Exemplo**                                        |
