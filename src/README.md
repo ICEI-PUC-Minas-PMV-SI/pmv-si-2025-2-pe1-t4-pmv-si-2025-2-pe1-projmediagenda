@@ -2,7 +2,7 @@
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+O site MediAgenda consiste em um site estático desenvolvido em HTML, CSS e JavaScript, que utiliza arquivos JSON para armazenamento e exibição de dados dinâmicos. Por ser um site estático, não requer um servidor com suporte a linguagens server-side (como PHP, Python ou Node.js) para funcionar. Sendo compativel por exemplo  com serviços como: GitHub Pages, Netlify, Vercel, Apache, Nginx ou até mesmo um servidor local.
 
 ## Histórico de versões
 
