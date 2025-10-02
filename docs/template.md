@@ -6,7 +6,12 @@ O layout geral (cabeçalho, navegação, etc.) seguirá o mesmo padrão em todas
 
 ## Cores
 
-A paleta de cores utilizada em nosso projeto de interface, foi das cores anexadas no arquivo a seguir:
+Os códigos de cores da imagem refere-se a paleta gerada no site color.adobe.com. A paleta contém as seguintes cores:
+#E4E6D9
+#C2CFB5
+#8AA98A
+#48664E
+#25352A
 
 ![Image](https://github.com/user-attachments/assets/fa7e3ca7-f796-4720-8af7-a610e9d0ce4b)
 
