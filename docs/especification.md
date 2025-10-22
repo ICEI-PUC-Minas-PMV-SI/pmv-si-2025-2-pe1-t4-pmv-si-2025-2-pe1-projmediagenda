@@ -46,10 +46,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade | 
-|------|-----------------------------------------|----| 
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
 |RF-001|A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario. | ALTA |  
-|RF-002|A aplicação deve ter uma interface prática e intuitiva| MÉDIA | 
+|RF-002|A aplicação deve ter uma interface prática e intuitiva| MÉDIA |
 |RF-003|A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login.| ALTA |
 |RF-004|A aplicação deve seguir um padrão de cores para sua interface.| MÉDIA |
 |RF-005|Deve ser possivel acompanhar os resultados é o nivel de aprendizado do cliente .| ALTA |
