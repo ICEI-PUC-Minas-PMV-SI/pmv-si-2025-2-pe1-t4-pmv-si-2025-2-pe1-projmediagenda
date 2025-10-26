@@ -49,7 +49,7 @@ body {
 .separator {
   width: 2px;
   background-color: #48664E;
-  height: 85%;
+  height: 100%;
   position: absolute;
   top: 15%;
   right: 0;
