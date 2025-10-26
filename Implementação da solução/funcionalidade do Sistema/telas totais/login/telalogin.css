@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-:root{
+
+:root {
     --cor-fundo: #E6E9D7;
     --verde-claro: #CFE0BC;
     --verde-medio: #7FA653;
@@ -11,63 +12,81 @@
     --fonte-primaria: 'Inter', sans-serif;
 }
 
-body{
+body {
     background-color: var(--cor-fundo);
     font-family: var(--fonte-primaria);
 }
-.container{
+
+.container {
     display: flex;
     height: 100vh;
 }
-.menu{
+
+.menu {
     display: flex;
     width: 15%;
     border-right: solid 4px var(--verde-escuro2);
 }
-.menu__lateral{
+
+.menu__lateral {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    gap: 1.2rem;
+    width: 100%;
 }
-button{
+
+button {
+    width: 100%;
+    padding: 1rem;
     background-color: var(--verde-medio);
-    color: white;
-    width: 175px;
-    font-size: 18px;
-    border: solid 1px var(--verde-medio);
-    border-radius: 25px;
-    padding: 10px;
-    margin: 7px 10px;
+    color: var(--branco);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s
 }
-img{
+.menu button:hover {
+  background-color: var(--verde-escuro);
+  transform: scale(1.03);
+}
+
+img {
+    padding-bottom: 5px;
     width: 200px;
     margin-left: 10px;
 }
-.principal{
+
+.principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     color: var(--verde-escuro2);
 }
-.principal__texto{
+
+.principal__texto {
     margin-top: 3%;
 }
-.principal__formulario{
+
+.principal__formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3%;
 }
-.principal__formulario i{
-    font-size: 24px; 
-    color: var(--verde-medio); 
-    margin-right: 15px; 
-    min-width: 24px; 
+
+.principal__formulario i {
+    font-size: 24px;
+    color: var(--verde-medio);
+    margin-right: 15px;
+    min-width: 24px;
     text-align: center;
 }
-.principal__formulario input{
-    width: 250px; 
+
+.principal__formulario input {
+    width: 250px;
     height: 40px;
     padding: 8px 15px;
     margin: 5px 10px;
@@ -75,9 +94,9 @@ img{
     border: 1px solid #ccc;
     border: solid 3px var(--verde-medio);
 }
+
 .principal__formulario input[type="date"]::before {
     content: attr(placeholder);
     width: 100%;
     color: #999;
 }
-

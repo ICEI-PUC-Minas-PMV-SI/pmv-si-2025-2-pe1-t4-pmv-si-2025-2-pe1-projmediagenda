@@ -1,0 +1,250 @@
+:root {
+    --verde-claro: #CFE0BC;
+    --verde-medio: #7FA653;
+    --verde-escuro: #63783D;
+    --verde-escuro2: #445A38;
+    --fundo: #E6E9D7;
+    --branco: #fff;
+    --texto: #2E2E2E;
+}
+
+/* ====== RESET GERAL ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====== LAYOUT GERAL ====== */
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ====== MENU LATERAL ====== */
+.sidebar {
+    background-color: var(--fundo);
+    width: 250px;
+    border-right: 3px solid var(--verde-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.titulo {
+    color: var(--verde-escuro2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ====== BOTÕES DO MENU ====== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.menu button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--verde-medio);
+    color: var(--branco);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: var(--verde-escuro);
+    transform: scale(1.03);
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+.configuracoes {
+    flex: 1;
+    padding: 2.5rem;
+    overflow-y: auto;
+}
+
+.configuracoes h2 {
+    font-size: 1.6rem;
+    color: var(--verde-escuro2);
+    margin-bottom: 2rem;
+}
+
+/* ====== SEÇÕES DAS CONFIGURAÇÕES ====== */
+.secao {
+    background-color: var(--branco);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid var(--verde-medio);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secao h3 {
+    margin-bottom: 10px;
+    color: var(--verde-escuro2);
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--verde-medio);
+    border-radius: 6px;
+}
+
+#anexar-btn {
+    margin-top: 10px;
+    background-color: var(--verde-medio);
+    color: var(--branco);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#anexar-btn:hover {
+    background-color: var(--verde-escuro);
+    transform: scale(1.03);
+}
+
+/* ====== SWITCH MODO NOTURNO ====== */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: var(--verde-medio);
+}
+
+input:checked+.slider:before {
+    transform: translateX(22px);
+}
+
+/* ====== MODO ESCURO ====== */
+.dark-mode {
+    background-color: #2b2b2b;
+    color: #f2f2f2;
+}
+
+.dark-mode .secao {
+    background-color: #3a3a3a;
+    border-left-color: var(--verde-escuro);
+}
+
+.dark-mode select,
+.dark-mode input[type="text"] {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: 1px solid var(--verde-escuro);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1023px) and (min-width: 769px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .configuracoes {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid var(--verde-escuro);
+        padding: 0.8rem;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .menu {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 0.8rem;
+    }
+
+    .menu button {
+        flex-shrink: 0;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .configuracoes {
+        padding: 20px;
+    }
+}

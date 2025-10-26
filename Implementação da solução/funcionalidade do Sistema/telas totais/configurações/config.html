@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações | MediAgenda</title>
+    <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="/../../docs/img/logo1.jpeg" alt="logo MediAgenda">
+                <h1 class="titulo">MediAgenda</h1>
+            </div>
+            <nav class="menu">
+                <button>Menu</button>
+                <button>Login</button>
+                <button>Calendário</button>
+                <button>Registro Agenda</button>
+                <button>Quiz</button>
+                <button>Resultado</button>
+                <button>Logout</button>
+            </nav>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="configuracoes">
+            <h2>Configurações</h2>
+
+            <!-- Seção de Idioma -->
+            <section class="secao">
+                <h3>Idioma</h3>
+                <select id="idioma-select">
+                    <option value="pt">Português (PT-BR)</option>
+                    <option value="en">English (EN)</option>
+                    <option value="es">Español (ES)</option>
+                </select>
+            </section>
+
+            <!-- Seção de Modo Noturno -->
+            <section class="secao">
+                <h3>Modo Noturno</h3>
+                <label class="switch">
+                    <input type="checkbox" id="modo-noturno">
+                    <span class="slider"></span>
+                </label>
+            </section>
+
+            <!-- Seção de Calendário Externo -->
+            <section class="secao">
+                <h3>Anexar Calendário Externo</h3>
+                <input type="text" id="link-calendario"
+                    placeholder="Cole o link do seu calendário (ex: Google, Outlook)">
+                <button id="anexar-btn">Anexar</button>
+            </section>
+
+            <!-- Mensagem -->
+            <p id="mensagem"></p>
+        </main>
+    </div>
+
+    <script src="config.js"></script>
+</body>
+
+</html>
