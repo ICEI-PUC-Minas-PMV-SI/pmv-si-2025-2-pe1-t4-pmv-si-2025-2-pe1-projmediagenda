@@ -1,1 +1,147 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #E4E6D9;
+  color: #1e392a;
+}
 
+/* Layout geral */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ==== MENU LATERAL ==== */
+.sidebar {
+  background-color: #a4c3a2;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 3px solid #48664E;
+}
+
+/* LOGO + TÍTULO CENTRALIZADOS */
+.logo {
+  display: flex;
+  flex-direction: column; /* IMAGEM E TEXTO EM LINHAS DIFERENTES (CORRETO) */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* AJUSTES AQUI PARA LOGO RETANGULAR */
+.logo img {
+  /* Define uma largura para a imagem */
+  width: 120px; /* Você pode ajustar este valor */
+  /* Remove a altura fixa e o corte circular para não cortar a logo */
+  height: auto; 
+  max-width: 100%;
+  border-radius: 0; /* Remove o border-radius de 50% */
+  object-fit: contain; /* Ajusta a imagem dentro do espaço sem cortar */
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 20px;
+  color: #1e392a;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ==== MENU BOTÕES ==== */
+.menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.menu button {
+  background-color: #8aa98a;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover, 
+.menu button.ativo {
+  background-color: #48664E;
+}
+
+/* ==== CONTEÚDO PRINCIPAL ==== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* permite empilhar título e perguntas */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.quiz-wrapper {
+  text-align: center;
+  max-width: 800px;
+}
+
+.quiz-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e392a;
+}
+
+/* ==== PERGUNTAS ==== */
+.question {
+  margin-bottom: 40px;
+}
+
+.question p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ==== ESCALA 0 A 10 ==== */
+.scale {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Botões 0 a 10 */
+.btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Cores do gradiente */
+.red { background-color: #d32f2f; }
+.orange { background-color: #f57c00; }
+.yellow { background-color: #fbc02d; color: #000; }
+.lightyellow { background-color: #ffeb3b; color: #000; }
+.lime { background-color: #cddc39; color: #000; }
+.lightgreen { background-color: #8bc34a; }
+.green { background-color: #4caf50; }
+.darkgreen { background-color: #2e7d32; }
