@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta rel="stylesheet" href="telalogin.css">
+    <link rel="stylesheet" href="telalogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="menu">
+            <aside class="aside">
+                <div class="menu__logo">
+                    <img src="/docs/img/logo1.jpeg" alt="logo">
+                </div>
+                <nav class="menu__lateral">
+                    <button>Menu</button>
+                    <button>Login</button>
+                    <button>Calendário</button>
+                    <button>Resgistro Agenda</button>
+                    <button>Quiz</button>
+                    <button>Resultado</button>
+                    <button>Logout</button>
+                </nav>
+            </aside>
+        </div>
+        <div class="principal">
+            <div class="principal__texto"> 
+                <h1>
+                    CADASTRE-SE AQUI
+                </h1>
+            </div>
+            <div class="principal__formulario">
+                <div class="principal__formulario--name"><i class="fas fa-user"></i><input type="text" placeholder="Nome Completo"></div>
+                <div class="principal__formulario--email"><i class="fas fa-envelope"></i> <input type="email" placeholder="Email"></div>
+                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input type="password" placeholder="Senha"></div>
+                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input type="password" placeholder="Confirmar Senha"></div>
+                <div class="principal__formulario--date"><i class="fas fa-calendar-alt"></i><input type="date" placeholder="Data de Nascimento"></div>
+                <button>Cadastrar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
