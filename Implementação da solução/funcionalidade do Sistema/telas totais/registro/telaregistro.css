@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E4E6D9;
+  display: flex;
+}
+
+/* Menu lateral */
+.sidebar {
+  width: 230px;
+  background-color: #E4E6D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar img {
+  width: 270px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sidebar h2 {
+  color: #E4E6D9;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar button {
+  width: 150px;
+  padding: 10px;
+  margin: 8px 0; 
+  border: none;
+  border-radius: 25px;
+  background-color: #8AA98A;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #48664E;
+}
+
+.separator {
+  width: 2px;
+  background-color: #48664E;
+  height: 85%;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+/* Área principal (formulário + registros) */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Formulário */
+.form-container {
+  width: 350px;
+  background-color: #C2CFB5;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.form-container h1 {
+  color: #48664E;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #48664E;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #8AA98A;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+  color: #25352A;
+}
+
+/* seleção de cor */
+input[type="color"] {
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn-adicionar {
+  background-color: #8AA98A;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-adicionar:hover {
+  background-color: #25352A;
+}
+
+/* Área de registros */
+.registros-container {
+  flex: 1;
+  background-color: #C2CFB5;
+  border-radius: 15px;
+  padding: 30px;
+  color: #25352A;
+  min-height: 200px;
+}
+
+.registros-container h2 {
+  color: #48664E;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lista-registros {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registro-item {
+  background-color: #E4E6D9;
+  border: 2px solid #8AA98A;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+.registro-item h3 {
+  color: #48664E;
+  margin: 0 0 5px 0;
+}
+
+.registro-item p {
+  margin: 3px 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Atividades - MediAgenda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img/WhatsApp_Image_2025-10-26_at_09.20.47-removebg-preview.png" alt="Logo MediAgenda">
+    <h2>MediAgenda</h2>
+    <button>Menu</button>
+    <button>Login</button>
+    <button>Calendário</button>
+    <button>Registro Agenda</button>
+    <button>Quiz</button>
+    <button>Resultado</button>
+    <button>Logout</button>
+    <div class="separator"></div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Formulário -->
+    <div class="form-container">
+      <h1>REGISTRO DE ATIVIDADES</h1>
+      <form id="formAtividade">
+        <div class="form-group">
+          <label for="titulo">Título da Atividade</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Digite o título da atividade">
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" name="descricao" placeholder="Adicione uma descrição"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="horario">Horário</label>
+          <input type="time" id="horario" name="horario">
+        </div>
+
+        <div class="form-group">
+          <label for="cor">Cor</label>
+          <input type="color" id="cor" name="cor" value="#8AA98A">
+        </div>
+
+        <button type="submit" class="btn-adicionar">Adicionar Atividade</button>
+      </form>
+    </div>
+
+    <!-- Área de registros -->
+    <div class="registros-container">
+      <h2>Atividades Registradas</h2>
+      <div class="lista-registros" id="listaRegistros">
+        <!-- Registros serão adicionados aqui futuramente pelo JavaScript -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
