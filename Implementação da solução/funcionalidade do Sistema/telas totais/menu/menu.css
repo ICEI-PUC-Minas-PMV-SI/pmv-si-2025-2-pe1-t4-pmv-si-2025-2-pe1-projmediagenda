@@ -1,0 +1,135 @@
+:root {
+  --verde-claro: #CFE0BC;
+  --verde-medio: #7FA653;
+  --verde-escuro: #63783D;
+  --verde-escuro2: #445A38;
+  --fundo: #E6E9D7;
+  --branco: #fff;
+  --texto: #2E2E2E;
+}
+
+/* ===================== */
+/* Estrutura pedida para o menu lateral */
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: var(--fundo);
+  width: 250px;
+  border-right: 3px solid var(--verde-escuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+/* logo + título */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+}
+
+.titulo {
+  text-size-adjust: 15px; /* (mantido como solicitado) */
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: var(--verde-escuro2);
+  margin: 0;
+}
+
+/* botões do menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.menu button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--verde-medio);
+  color: var(--branco);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+  box-shadow: 0 1px 0 rgba(0,0,0,.08) inset, 0 1px 4px rgba(0,0,0,.06);
+}
+
+.menu button:hover {
+  background-color: var(--verde-escuro);
+  transform: scale(1.03);
+}
+
+.menu button:focus-visible {
+  outline: 3px solid var(--verde-claro);
+  outline-offset: 2px;
+}
+
+/* ===================== */
+/* Conteúdo exemplo (opcional) */
+.content {
+  flex: 1;
+  padding: 2.5rem 3rem;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3rem);
+  letter-spacing: .04em;
+  margin: 0 0 1.5rem;
+  color: var(--verde-escuro2);
+}
+
+.card {
+  background: var(--branco);
+  border: 2px solid var(--verde-claro);
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+  max-width: 900px;
+}
+
+.card ul {
+  margin-top: 1rem;
+}
+
+/* Responsividade básica */
+@media (max-width: 880px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 3px solid var(--verde-escuro);
+  }
+}

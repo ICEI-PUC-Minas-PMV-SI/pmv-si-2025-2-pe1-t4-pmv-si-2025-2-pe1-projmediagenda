@@ -10,73 +10,68 @@ body {
   display: flex;
   height: 100vh;
 }
-
-/* ==== MENU LATERAL ==== */
+/* ==== MENU LATERAL PADRONIZADO ==== */
 .sidebar {
-  background-color: #a4c3a2;
-  padding: 20px;
-  width: 220px;
+  background-color:  #E6E9D7;
+  width: 250px;
+  border-right: 3px solid #63783D;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 3px solid #48664E;
+  padding: 1rem;
+  gap: 2rem;
 }
 
-/* LOGO + TÍTULO CENTRALIZADOS */
+/* LOGO E TÍTULO CENTRALIZADOS */
 .logo {
   display: flex;
-  flex-direction: column; /* IMAGEM E TEXTO EM LINHAS DIFERENTES (CORRETO) */
-  align-items: center;    /* centraliza horizontalmente */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 30px;
+  gap: 0.5rem;
 }
 
-/* AJUSTES AQUI PARA LOGO RETANGULAR */
 .logo img {
-  /* Define uma largura para a imagem */
-  width: 120px; /* Você pode ajustar este valor */
-  /* Remove a altura fixa e o corte circular para não cortar a logo */
-  height: auto; 
+  width: 120px;
+  height: auto;
   max-width: 100%;
-  border-radius: 0; /* Remove o border-radius de 50% */
-  object-fit: contain; /* Ajusta a imagem dentro do espaço sem cortar */
-  margin-bottom: 10px;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .titulo {
-  font-size: 20px;
-  color: #1e392a;
+  font-size: 1.5rem;
   font-weight: 600;
+  color: #445A38;
   margin: 0;
 }
 
 /* ==== MENU BOTÕES ==== */
 .menu {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.2rem;
   width: 100%;
 }
 
 .menu button {
-  background-color: #8aa98a;
+  width: 100%;
+  padding: 1rem;
+  background-color: #7FA653;
+  color: var(--branco);
   border: none;
-  padding: 12px;
   border-radius: 30px;
-  color: #fff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.menu button:hover, 
-.menu button.ativo {
-  background-color: #48664E;
+.menu button:hover {
+  background-color:  #63783D;
+  transform: scale(1.03);
 }
-
 /* ==== CONTEÚDO PRINCIPAL ==== */
 .main-content {
   flex: 1;

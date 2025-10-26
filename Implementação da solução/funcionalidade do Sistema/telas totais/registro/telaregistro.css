@@ -1,176 +1,252 @@
-body {
+/* ===== Paleta (mesma do Login) ===== */
+:root {
+  --verde-claro: #CFE0BC;
+  --verde-medio: #7FA653;
+  --verde-escuro: #63783D;
+  --verde-escuro2: #445A38;
+  --fundo: #E6E9D7;
+  --branco: #fff;
+  --texto: #2E2E2E;
+}
+
+/* ===== Reset ===== */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #E4E6D9;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+}
+
+/* ===== Layout geral ===== */
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
   display: flex;
 }
 
-/* Menu lateral */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== Sidebar (idêntica ao Login) ===== */
 .sidebar {
-  width: 230px;
-  background-color: #E4E6D9;
+  background-color: var(--fundo);
+  width: 250px;
+  border-right: 3px solid var(--verde-escuro);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0;
-  height: 100vh;
-  position: relative;
+  padding: 1rem;
+  gap: 2rem;
 }
 
-.sidebar img {
-  width: 270px;
-  margin-bottom: 10px;
-  display: block;
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
 }
 
-.sidebar h2 {
-  color: #E4E6D9;
-  margin-bottom: 20px;
-  font-size: 20px;
+.logo img {
+  width: 200px;
+  height: auto;
+  display: block
 }
 
-.sidebar button {
-  width: 150px;
-  padding: 10px;
-  margin: 8px 0; 
+.titulo {
+  color: var(--verde-escuro2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Botões do menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.menu button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--verde-medio);
+  color: var(--branco);
   border: none;
-  border-radius: 25px;
-  background-color: #8AA98A;
-  color: white;
+  border-radius: 30px;
   font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: .3s;
 }
 
-.sidebar button:hover {
-  background-color: #48664E;
+.menu button:hover {
+  background-color: var(--verde-escuro);
+  transform: scale(1.03);
 }
 
-.separator {
-  width: 2px;
-  background-color: #48664E;
-  height: 85%;
-  position: absolute;
-  top: 15%;
-  right: 0;
-}
-
-/* Área principal (formulário + registros) */
+/* ===== Main ===== */
 .main {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 40px;
   gap: 40px;
+  padding: 40px;
+  overflow: auto;
+  align-items: flex-start;
 }
 
-/* Formulário */
+/* ===== Formulário ===== */
 .form-container {
-  width: 350px;
-  background-color: #C2CFB5;
-  padding: 30px;
-  border-radius: 15px;
+  width: 380px;
+  background-color: var(--verde-claro);
+  padding: 26px;
+  border-radius: 14px;
+  border: 2px solid rgba(99, 120, 61, .15);
 }
 
 .form-container h1 {
-  color: #48664E;
+  color: var(--verde-escuro2);
   font-size: 24px;
-  text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
+  gap: 8px;
+  margin-bottom: 16px
 }
 
 label {
-  color: #48664E;
-  font-weight: bold;
-  margin-bottom: 8px;
+  color: var(--verde-escuro2);
+  font-weight: 600
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
-  padding: 10px;
-  border: 2px solid #8AA98A;
+  padding: 10px 12px;
+  border: 2px solid var(--verde-medio);
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: var(--branco);
   font-size: 14px;
+  color: var(--texto);
   outline: none;
-  color: #25352A;
-}
-
-/* seleção de cor */
-input[type="color"] {
-  height: 40px;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
 }
 
 textarea {
-  resize: none;
-  height: 80px;
+  min-height: 90px;
+  resize: vertical
+}
+
+input[type="color"] {
+  height: 42px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer
 }
 
 .btn-adicionar {
-  background-color: #8AA98A;
-  color: white;
+  width: 100%;
+  background-color: var(--verde-medio);
+  color: var(--branco);
   border: none;
   padding: 12px 20px;
   border-radius: 25px;
-  cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  width: 100%;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 8px;
 }
 
 .btn-adicionar:hover {
-  background-color: #25352A;
+  background-color: var(--verde-escuro);
+  transform: scale(1.02)
 }
 
-/* Área de registros */
+/* ===== Lista de registros ===== */
 .registros-container {
   flex: 1;
-  background-color: #C2CFB5;
-  border-radius: 15px;
-  padding: 30px;
-  color: #25352A;
-  min-height: 200px;
+  background-color: var(--verde-claro);
+  border-radius: 14px;
+  border: 2px solid rgba(99, 120, 61, .15);
+  padding: 26px;
+  min-height: 220px;
 }
 
 .registros-container h2 {
-  color: #48664E;
-  font-size: 22px;
-  margin-bottom: 20px;
+  color: var(--verde-escuro2);
+  font-size: 20px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .lista-registros {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px
 }
 
 .registro-item {
-  background-color: #E4E6D9;
-  border: 2px solid #8AA98A;
+  background-color: var(--fundo);
+  border: 2px solid var(--verde-medio);
   border-radius: 10px;
-  padding: 15px;
-  text-align: left;
+  padding: 14px;
 }
 
 .registro-item h3 {
-  color: #48664E;
-  margin: 0 0 5px 0;
+  color: var(--verde-escuro2);
+  margin: 0 0 4px
 }
 
 .registro-item p {
-  margin: 3px 0;
+  margin: 3px 0
+}
+
+/* ===== Responsividade ===== */
+@media (max-width:1023px) and (min-width:769px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px
+  }
+
+  .titulo {
+    font-size: 1rem
+  }
+
+  .main {
+    gap: 28px;
+    padding: 28px
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    flex-direction: column;
+    height: auto
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 3px solid var(--verde-escuro);
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px
+  }
+
+  .form-container {
+    width: 100%
+  }
 }
