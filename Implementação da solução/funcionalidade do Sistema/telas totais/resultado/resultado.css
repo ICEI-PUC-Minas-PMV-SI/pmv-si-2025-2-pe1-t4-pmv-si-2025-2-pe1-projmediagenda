@@ -1,1 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #E4E6D9;
+  color: #1e392a;
+}
 
+/* ==== LAYOUT GERAL ==== */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ==== MENU LATERAL ==== */
+.sidebar {
+  background-color: #a4c3a2;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 3px solid #48664E;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e392a;
+}
+
+.menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.menu button {
+  background-color: #8aa98a;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover,
+.menu button.ativo {
+  background-color: #48664E;
+}
+
+/* ==== CONTEÚDO PRINCIPAL ==== */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* ==== RESULTADO ==== */
+.resultado-wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.resultado-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1e392a;
+}
+
+/* ==== AVALIAÇÃO E MEDIDOR ==== */
+.resultado-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.avaliacao {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transform: translateY(-50px);
+}
+
+.medidor {
+  flex: 1;
+  max-width: 480px;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin-left: auto;
+}
+
+/* ==== MENSAGEM ==== */
+.mensagem-box {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 20px;
+  border: 2px solid #48664E;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.mensagem-box strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mensagem-texto {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
