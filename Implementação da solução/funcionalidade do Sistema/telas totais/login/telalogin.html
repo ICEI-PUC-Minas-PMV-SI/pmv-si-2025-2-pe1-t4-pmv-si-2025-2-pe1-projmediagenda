@@ -17,13 +17,14 @@
                     <img src="/../../docs/img/logo1.png" alt="logo">
                 </div>
                 <nav class="menu__lateral">
-                    <button>Menu</button>
-                    <button>Login</button>
-                    <button>Calendário</button>
-                    <button>Resgistro Agenda</button>
-                    <button>Quiz</button>
-                    <button>Resultado</button>
-                    <button>Logout</button>
+                    <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+                    <button class="bnt-route" data-route="../login/telalogin.html">Login</button>
+                    <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+                    <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+                    <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+                    <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+                    <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+
                 </nav>
             </aside>
         </div>
@@ -34,20 +35,22 @@
                 </h1>
             </div>
             <div class="principal__formulario">
-                <div class="principal__formulario--name"><i class="fas fa-user"></i><input type="text"
+                <div class="principal__formulario--name"><i class="fas fa-user"></i><input id="nomecompleto" type="text"
                         placeholder="Nome Completo"></div>
-                <div class="principal__formulario--email"><i class="fas fa-envelope"></i> <input type="email"
+                <div class="principal__formulario--email"><i class="fas fa-envelope"></i> <input id="email" type="email"
                         placeholder="Email"></div>
-                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input type="password"
+                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input id="senha" type="password"
                         placeholder="Senha"></div>
-                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input type="password"
-                        placeholder="Confirmar Senha"></div>
-                <div class="principal__formulario--date"><i class="fas fa-calendar-alt"></i><input type="date"
-                        placeholder="Data de Nascimento"></div>
-                <button>Cadastrar</button>
+                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input id="confirmarSenha"
+                        type="password" placeholder="Confirmar Senha"></div>
+                <div class="principal__formulario--date"><i class="fas fa-calendar-alt"></i><input id="dataNascimento"
+                        type="date" placeholder="Data de Nascimento"></div>
+                <button type="submit">Cadastrar</button>
             </div>
         </div>
     </div>
 </body>
+<script src="login.js" defer></script>
+<script src="router.js"></script>
 
 </html>

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MediAgenda - Quiz</title>
   <link rel="stylesheet" href="quiz.css" />
 </head>
+
 <body>
   <div class="container">
-    
+
     <aside class="sidebar">
       <div class="logo">
         <img src="/../../docs/img/logo1.png" alt="logo MediAgenda">
-        <h1 class="titulo">MediAgenda</h1>
       </div>
 
       <nav class="menu">
-        <button>Menu</button>
-        <button>Login</button>
-        <button>Calendário</button>
-        <button>Registro Agenda</button>
-        <button class="ativo">Quiz</button>
-        <button>Resultado</button>
-        <button>Logout</button>
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../login/telalogin.html">Login</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+
       </nav>
     </aside>
 
@@ -30,7 +32,7 @@
       <h1 class="quiz-title">Quiz</h1>
 
       <div class="quiz-container">
-        
+
         <div class="question">
           <p>Quanto você sente dificuldade em manter a concentração nas suas atividades?</p>
           <div class="scale">
@@ -83,8 +85,9 @@
         </div>
       </div>
     </main>
-    
-  </div>
-</body>
-</html>
 
+  </div>
+  <script src="router.js" defer></script>
+</body>
+
+</html>

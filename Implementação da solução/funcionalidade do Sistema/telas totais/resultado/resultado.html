@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MediAgenda - Resultado</title>
   <link rel="stylesheet" href="resultado.css" />
 </head>
+
 <body>
   <div class="container">
-    
+
     <!-- ==== MENU LATERAL ==== -->
     <aside class="sidebar">
       <div class="logo">
         <img src="/../../docs/img/logo1.png" alt="logo MediAgenda">
-        <h1 class="titulo">MediAgenda</h1>
+
       </div>
 
       <nav class="menu">
-        <button>Menu</button>
-        <button>Login</button>
-        <button>Calendário</button>
-        <button>Registro Agenda</button>
-        <button>Quiz</button>
-        <button class="ativo">Resultado</button>
-        <button>Logout</button>
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../login/telalogin.html">Login</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
       </nav>
     </aside>
 
@@ -48,4 +50,6 @@
 
   </div>
 </body>
+<script src="router.js"></script>
+
 </html>

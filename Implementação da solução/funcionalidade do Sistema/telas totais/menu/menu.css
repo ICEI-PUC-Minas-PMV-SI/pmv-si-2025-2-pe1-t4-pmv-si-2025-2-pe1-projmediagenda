@@ -48,7 +48,7 @@ body {
 }
 
 .logo img {
-  width: 120px;
+  width: 200px;
   height: auto;
   display: block;
 }
@@ -91,8 +91,7 @@ body {
   outline-offset: 2px;
 }
 
-/* ===================== */
-/* Conteúdo exemplo (opcional) */
+
 .content {
   flex: 1;
   padding: 2.5rem 3rem;

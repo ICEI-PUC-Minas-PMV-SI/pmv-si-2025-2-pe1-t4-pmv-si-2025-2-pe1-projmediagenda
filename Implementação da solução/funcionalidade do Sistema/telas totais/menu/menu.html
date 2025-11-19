@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MediAgenda — Menu Lateral</title>
   <link rel="stylesheet" href="menu.css" />
 </head>
+
 <body>
   <div class="container">
 
@@ -14,17 +16,19 @@
       <div class="logo">
         <!-- troque o src para o caminho da sua logo -->
         <img src="/../../docs/img/logo1.png" alt="Logo MediAgenda" />
-        <h1 class="titulo">MediAgenda</h1>
+        
       </div>
 
       <nav class="menu">
-        <button type="button">Menu</button>
-        <button type="button">Login</button>
-        <button type="button">Calendário</button>
-        <button type="button">Registro Agenda</button>
-        <button type="button">Quiz</button>
-        <button type="button" class="ativo">Resultado</button>
-        <button type="button">Logout</button>
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../login/telalogin.html">Login</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+
+        <button class="bnt-route" data-route="config">Configurações</button>
       </nav>
     </aside>
 
@@ -49,4 +53,6 @@
 
   </div>
 </body>
+<script src="router.js" defer></script>
+
 </html>
