@@ -26,7 +26,7 @@ body {
 
 .sidebar {
   background-color: var(--fundo);
-  width: 250px;
+  width: 200px;
   border-right: 3px solid var(--verde-escuro);
   display: flex;
   flex-direction: column;

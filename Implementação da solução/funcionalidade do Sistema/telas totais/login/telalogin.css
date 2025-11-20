@@ -24,15 +24,17 @@ body {
 
 .menu {
     display: flex;
-    width: 15%;
+    width: 230px;
     border-right: solid 4px var(--verde-escuro2);
 }
 
 .menu__lateral {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    width: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 button {
@@ -100,3 +102,4 @@ img {
     width: 100%;
     color: #999;
 }
+
