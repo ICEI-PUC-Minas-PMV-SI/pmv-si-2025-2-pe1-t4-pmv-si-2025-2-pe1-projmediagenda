@@ -159,7 +159,29 @@ body {
 .green:hover { background-color: #43a047; }
 
 .darkgreen { background-color: #2e7d32; }
-<<<<<<< HEAD
+
+.darkgreen:hover { background-color: #1b5e20; }
+
+/* ===== BOTÃO ENVIAR ===== */
+.send-btn {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background-color: #445A38;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #7FA653;
+  transform: scale(1.05);
+
+}
+
 
 @media (max-width: 900px) {
   .sidebar {
@@ -218,25 +240,4 @@ body {
   .title {
     font-size: 1.4rem;
   }
-=======
-.darkgreen:hover { background-color: #1b5e20; }
-
-/* ===== BOTÃO ENVIAR ===== */
-.send-btn {
-  margin-top: 20px;
-  padding: 15px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  background-color: #445A38;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.send-btn:hover {
-  background-color: #7FA653;
-  transform: scale(1.05);
->>>>>>> 237b5971d013629f26e18622fc2b1a585ee2b309
 }
