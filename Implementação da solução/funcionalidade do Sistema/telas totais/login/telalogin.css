@@ -60,16 +60,16 @@ img {
     margin-left: 10px;
 }
 
-.principal {
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 85%;
+    align-itens: center;
     color: var(--verde-escuro2);
 }
 
 .principal__texto {
     margin-top: 3%;
+    text-align: center;
 }
 
 .principal__formulario {
@@ -101,5 +101,9 @@ img {
     content: attr(placeholder);
     width: 100%;
     color: #999;
+}
+.submit{
+    margin-top: 25px;
+    width: 20rem;
 }
 
