@@ -23,7 +23,6 @@
         <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
         <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
         <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
-
       </nav>
     </aside>
 
@@ -32,61 +31,71 @@
 
       <div class="quiz-container">
 
-        <div class="question">
+        <!-- PERGUNTA 1 -->
+        <div class="question" data-question="q1">
           <p>Quanto você sente dificuldade em manter a concentração nas suas atividades?</p>
           <div class="scale">
-            <button class="btn red">0</button>
-            <button class="btn red">1</button>
-            <button class="btn orange">2</button>
-            <button class="btn orange">3</button>
-            <button class="btn yellow">4</button>
-            <button class="btn yellow">5</button>
-            <button class="btn lightyellow">6</button>
-            <button class="btn lime">7</button>
-            <button class="btn lightgreen">8</button>
-            <button class="btn green">9</button>
-            <button class="btn darkgreen">10</button>
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
           </div>
         </div>
 
-        <div class="question">
+        <!-- PERGUNTA 2 -->
+        <div class="question" data-question="q2">
           <p>Quão intenso está o seu nível de fadiga corporal?</p>
           <div class="scale">
-            <button class="btn red">0</button>
-            <button class="btn red">1</button>
-            <button class="btn orange">2</button>
-            <button class="btn orange">3</button>
-            <button class="btn yellow">4</button>
-            <button class="btn yellow">5</button>
-            <button class="btn lightyellow">6</button>
-            <button class="btn lime">7</button>
-            <button class="btn lightgreen">8</button>
-            <button class="btn green">9</button>
-            <button class="btn darkgreen">10</button>
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
           </div>
         </div>
 
-        <div class="question">
+        <!-- PERGUNTA 3 -->
+        <div class="question" data-question="q3">
           <p>No geral, de 0 a 10, qual o seu nível de exaustão?</p>
           <div class="scale">
-            <button class="btn red">0</button>
-            <button class="btn red">1</button>
-            <button class="btn orange">2</button>
-            <button class="btn orange">3</button>
-            <button class="btn yellow">4</button>
-            <button class="btn yellow">5</button>
-            <button class="btn lightyellow">6</button>
-            <button class="btn lime">7</button>
-            <button class="btn lightgreen">8</button>
-            <button class="btn green">9</button>
-            <button class="btn darkgreen">10</button>
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
           </div>
         </div>
+
       </div>
+
+      <button id="btnEnviar" class="send-btn">Enviar Respostas</button>
+
     </main>
 
   </div>
+
   <script src="router.js" defer></script>
+  <script src="quiz.js" defer></script>
+
 </body>
 
 </html>
