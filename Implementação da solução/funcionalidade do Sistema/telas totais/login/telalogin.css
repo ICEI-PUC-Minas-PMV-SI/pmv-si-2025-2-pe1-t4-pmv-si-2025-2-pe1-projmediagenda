@@ -63,7 +63,7 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    align-itens: center;
+    align-items: center;
     color: var(--verde-escuro2);
 }
 
@@ -121,7 +121,7 @@ img {
     font-size: 1.6rem;
     text-align: center;
   }
-}
+
 @media (max-width: 380px) {
   .form-area input,
   .sidebar button {
