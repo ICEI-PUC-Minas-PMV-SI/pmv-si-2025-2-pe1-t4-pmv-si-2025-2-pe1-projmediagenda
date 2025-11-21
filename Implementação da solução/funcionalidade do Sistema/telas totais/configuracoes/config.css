@@ -213,38 +213,61 @@ input:checked+.slider:before {
     }
 }
 
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+  }
+  .container {
+    gap: 20px;
+  }
+}
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        height: auto;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .sidebar {
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        border-right: none;
-        border-bottom: 3px solid var(--verde-escuro);
-        padding: 0.8rem;
-    }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--verde-escuro);
+    padding-bottom: 20px;
+  }
 
-    .logo img {
-        width: 60px;
-    }
+  .sidebar button {
+    width: 80%;
+  }
 
-    .menu {
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 0.8rem;
-    }
+  .form-area {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 500px) {
 
-    .menu button {
-        flex-shrink: 0;
-        padding: 0.7rem 1rem;
-        font-size: 0.9rem;
-    }
+  .sidebar button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
 
-    .configuracoes {
-        padding: 20px;
-    }
+  .form-area input {
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .form-area input,
+  .sidebar button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
 }
