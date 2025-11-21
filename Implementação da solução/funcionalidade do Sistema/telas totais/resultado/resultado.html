@@ -15,7 +15,6 @@
     <aside class="sidebar">
       <div class="logo">
         <img src="/../../docs/img/logo1.png" alt="logo MediAgenda">
-
       </div>
 
       <nav class="menu">
@@ -35,8 +34,17 @@
         <h1 class="resultado-title">Resultado</h1>
 
         <div class="resultado-content">
-          <p class="avaliacao">AVALIAÇÃO: 0</p>
-          <img src="medidor.png" alt="Medidor de avaliação" class="medidor">
+          <p class="avaliacao">AVALIAÇÃO: <span id="media">0</span></p>
+
+          <!-- 🎯 NOVO VELOCÍMETRO -->
+          <div class="speed-container">
+            <svg class="speed-arc" viewBox="0 0 300 180">
+              <path d="M20 150 A130 130 0 0 1 280 150" stroke="#7FA653"
+                stroke-width="18" fill="none" />
+              <line id="pointer" x1="150" y1="150" x2="150" y2="50" />
+            </svg>
+            <span class="speed-center-value" id="speed-value">0</span>
+          </div>
         </div>
 
         <div class="mensagem-box">
@@ -50,6 +58,8 @@
 
   </div>
 </body>
+
 <script src="router.js"></script>
+<script src="resultado.js"></script>
 
 </html>
