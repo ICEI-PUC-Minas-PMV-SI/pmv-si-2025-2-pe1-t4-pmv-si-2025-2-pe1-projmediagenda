@@ -107,3 +107,29 @@ img {
     width: 20rem;
 }
 
+  .sidebar button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .form-area input {
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .form-area input,
+  .sidebar button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

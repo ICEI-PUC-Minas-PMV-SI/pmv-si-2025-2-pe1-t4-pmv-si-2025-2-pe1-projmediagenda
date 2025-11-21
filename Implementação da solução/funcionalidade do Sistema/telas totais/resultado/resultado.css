@@ -158,3 +158,62 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+  }
+  .container {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--verde-escuro);
+    padding-bottom: 20px;
+  }
+
+  .sidebar button {
+    width: 80%;
+  }
+
+  .form-area {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 500px) {
+
+  .sidebar button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .form-area input {
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .form-area input,
+  .sidebar button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}
