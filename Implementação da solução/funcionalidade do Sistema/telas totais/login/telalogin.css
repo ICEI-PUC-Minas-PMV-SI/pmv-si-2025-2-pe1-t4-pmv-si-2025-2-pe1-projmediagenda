@@ -60,16 +60,16 @@ img {
     margin-left: 10px;
 }
 
-.principal {
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 85%;
+    align-itens: center;
     color: var(--verde-escuro2);
 }
 
 .principal__texto {
     margin-top: 3%;
+    text-align: center;
 }
 
 .principal__formulario {
@@ -102,37 +102,10 @@ img {
     width: 100%;
     color: #999;
 }
-@media (max-width: 900px) {
-  .sidebar {
-    width: 200px;
-  }
-  .container {
-    gap: 20px;
-  }
+.submit{
+    margin-top: 25px;
+    width: 20rem;
 }
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 3px solid var(--verde-escuro);
-    padding-bottom: 20px;
-  }
-
-  .sidebar button {
-    width: 80%;
-  }
-
-  .form-area {
-    width: 90%;
-    max-width: 400px;
-  }
-}
-@media (max-width: 500px) {
 
   .sidebar button {
     width: 100%;
