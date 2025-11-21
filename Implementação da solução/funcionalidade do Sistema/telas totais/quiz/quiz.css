@@ -10,9 +10,10 @@ body {
   display: flex;
   height: 100vh;
 }
+
 /* ==== MENU LATERAL PADRONIZADO ==== */
 .sidebar {
-  background-color:  #E6E9D7;
+  background-color: #E6E9D7;
   width: 250px;
   border-right: 3px solid #63783D;
   display: flex;
@@ -36,7 +37,6 @@ body {
   width: 200px;
   height: auto;
   max-width: 100%;
-  border-radius: 0;
   object-fit: contain;
 }
 
@@ -69,15 +69,16 @@ body {
 }
 
 .menu button:hover {
-  background-color:  #63783D;
+  background-color: #63783D;
   transform: scale(1.03);
 }
+
 /* ==== CONTEÚDO PRINCIPAL ==== */
 .main-content {
   flex: 1;
   display: flex;
-  flex-direction: column; /* permite empilhar título e perguntas */
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   padding: 40px;
@@ -131,15 +132,34 @@ body {
   transform: scale(1.1);
 }
 
-/* Cores do gradiente */
+/* ===== BOTÃO SELECIONADO ===== */
+.btn.selected {
+  border: 3px solid #000;
+  transform: scale(1.18);
+  box-shadow: 0 0 10px #000;
+}
+
+/* ===== GRADIENTE DE CORES ===== */
 .red { background-color: #d32f2f; }
+.red:hover { background-color: #b71c1c; }
+
 .orange { background-color: #f57c00; }
+.orange:hover { background-color: #ef6c00; }
+
 .yellow { background-color: #fbc02d; color: #000; }
 .lightyellow { background-color: #ffeb3b; color: #000; }
+
 .lime { background-color: #cddc39; color: #000; }
+.lime:hover { background-color: #c0ca33; }
+
 .lightgreen { background-color: #8bc34a; }
+.lightgreen:hover { background-color: #7cb342; }
+
 .green { background-color: #4caf50; }
+.green:hover { background-color: #43a047; }
+
 .darkgreen { background-color: #2e7d32; }
+<<<<<<< HEAD
 
 @media (max-width: 900px) {
   .sidebar {
@@ -198,4 +218,25 @@ body {
   .title {
     font-size: 1.4rem;
   }
+=======
+.darkgreen:hover { background-color: #1b5e20; }
+
+/* ===== BOTÃO ENVIAR ===== */
+.send-btn {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background-color: #445A38;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #7FA653;
+  transform: scale(1.05);
+>>>>>>> 237b5971d013629f26e18622fc2b1a585ee2b309
 }
