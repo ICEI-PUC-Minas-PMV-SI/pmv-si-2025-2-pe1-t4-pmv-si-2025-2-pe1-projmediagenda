@@ -1,33 +1,42 @@
 # This CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to generate yours today!
 
-cff-version: 1.2.0
-title: Web Application Template
+cff-version: 1.0.1
+title: Uma Agenda Medica.
 message: >-
   Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
   Web da PUC Minas.
 type: software
 authors:
-  - given-names: Aluno 1
-    family-names: Nome Completo
-    email: aluno@pucminas.br
+  - family-names: Cayuri 
+    given-names: Domingues de Souza
+    email: 1629441@sga.pucminas.br
     affiliation: PUC Minas
-  - given-names: Hugo
-    name-particle: 'B '
-    family-names: de Paula
-    name-suffix: Prof.
-    email: hugo@pucminas.br
+  - family-names: Lucas 
+    given-names: 
+    email:
     affiliation: PUC Minas
-    orcid: 'https://orcid.org/0000-0002-6193-3205'
+  - family-names: Iuri
+    given-names: 
+    email:
+     affiliation: PUC Minas
+  - family-names: Erick
+    given-names: ''
+    email:
+    affiliation: PUC Minas
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family names: Marco 
+    given names: Rodrigo Costa
+    email: marco.rodrigo@sga.pucminas.br
+    affiliation: PUC Minas
 repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t4-pmv-si-2025-2-pe1-projmediagenda/blob/main/CITATION.cff
 abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+A MediaAgenda foi densenvolvida tomando em conta que seria um projeto front end, no qual não se utlizaria fatores back end. O site foi construindo utilizando as linguagens htmls, css e javascript apenas.
+Começamos a procura da motivação da criação do site. No qual seria o problema que ingliria nosso público - alvo.Adiante definimos requistos funcionais e não funcionais para termos uma base, construimos as paginas em cima das nossas ideias de wireflames e utlizamos o trello para orgamizar as atividades pessoais de cada participante, além de aprimoramos nossas atividades por meio do metodo Scrum.
 keywords:
-  - Desenvolvimento Web
-  - HTML
-  - CSS
-  - JavaScript
-  - Template
-date-released: '2024-06-23'
+ - Medico
+ - Agenda
+version: 1.0.1
+date-released: '2025-23-11'

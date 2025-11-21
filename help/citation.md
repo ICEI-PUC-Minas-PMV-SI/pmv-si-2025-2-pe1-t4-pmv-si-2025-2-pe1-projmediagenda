@@ -7,7 +7,6 @@ O objetivo do arquivo CITATION.cff é facilitar a atribuição de crédito aos d
 
 O arquivo CITATION.cff inclui informações como o título do software, autores, licença, versão, URL, DOI e outras informações relevantes para a citação e documentação do software.
 
-O arquivo CITATION.cff está disponível na pasta raiz do repositório e deve ser atualizado com as informações completas do trabalho sem deixar campos em branco. 
+O arquivo CITATION.cff está disponível na pasta raiz do repositório e deve ser atualizado com as informações completas do trabalho sem deixar campos em branco.
 
 O professor Laerte do curso de Engenharia de Software da PUC Minas disponibilizou orientações sobre o preenchimento do arquivo CITATION.cff, disponível em [https://youtu.be/zsTyPoBCCvM](https://youtu.be/zsTyPoBCCvM).
-
