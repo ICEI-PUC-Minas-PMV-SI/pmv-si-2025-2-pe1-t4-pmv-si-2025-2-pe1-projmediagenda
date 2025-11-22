@@ -29,12 +29,12 @@ body {
 }
 
 .menu__lateral {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 button {
@@ -49,9 +49,10 @@ button {
     cursor: pointer;
     transition: 0.3s
 }
+
 .menu button:hover {
-  background-color: var(--verde-escuro);
-  transform: scale(1.03);
+    background-color: var(--verde-escuro);
+    transform: scale(1.03);
 }
 
 img {
@@ -102,34 +103,61 @@ img {
     width: 100%;
     color: #999;
 }
-.submit{
+
+.submit {
     margin-top: 25px;
     width: 20rem;
 }
 
-  .sidebar button {
+.sidebar button {
     width: 100%;
     font-size: 1rem;
     padding: 12px;
-  }
+}
 
-  .form-area input {
+.form-area input {
     font-size: 0.95rem;
-  }
+}
 
-  .title {
+.title {
     font-size: 1.6rem;
     text-align: center;
-  }
+}
+
+
+.senha-container {
+    position: relative;
+}
+
+
+.senha-container input {
+    padding-right: 20px;
+}
+
+/* ícone do olho */
+.toggleSenha {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.toggleSenha:hover {
+    opacity: 1;
+}
 
 @media (max-width: 380px) {
-  .form-area input,
-  .sidebar button {
-    font-size: 0.85rem;
-    padding: 10px;
-  }
 
-  .title {
-    font-size: 1.4rem;
-  }
+    .form-area input,
+    .sidebar button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
 }

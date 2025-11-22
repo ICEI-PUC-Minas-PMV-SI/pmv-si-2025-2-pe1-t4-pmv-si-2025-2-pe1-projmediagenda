@@ -11,30 +11,82 @@
 
 <body>
     <div class="container">
-        
+
         <div class="principal">
+
+            <!-- Título principal -->
             <div class="principal__texto">
-                <h1>
-                    CADASTRE-SE AQUI
-                </h1>
+                <h1 id="tituloTela">CADASTRE-SE AQUI</h1>
             </div>
-            <div class="principal__formulario">
-                <div class="principal__formulario--name"><i class="fas fa-user"></i><input id="nomecompleto" type="text"
-                        placeholder="Nome Completo"></div>
-                <div class="principal__formulario--email"><i class="fas fa-envelope"></i> <input id="email" type="email"
-                        placeholder="Email"></div>
-                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input id="senha" type="password"
-                        placeholder="Senha"></div>
-                <div class="principal__formulario--senha"><i class="fas fa-lock"></i><input id="confirmarSenha"
-                        type="password" placeholder="Confirmar Senha"></div>
-                <div class="principal__formulario--date"><i class="fas fa-calendar-alt"></i><input id="dataNascimento"
-                        type="date" placeholder="Data de Nascimento"></div>
+
+            <!-- ==================== FORMULÁRIO DE CADASTRO ==================== -->
+            <div id="formCadastro" class="principal__formulario">
+
+                <div class="principal__formulario--name">
+                    <i class="fas fa-user"></i>
+                    <input id="nomecompleto" type="text" placeholder="Nome Completo">
+                </div>
+
+                <div class="principal__formulario--email">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="senha" type="password" placeholder="Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('senha', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="confirmarSenha" type="password" placeholder="Confirmar Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('confirmarSenha', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <div class="principal__formulario--date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input id="dataNascimento" type="date" placeholder="Data de Nascimento">
+                </div>
+
                 <button class="submit" type="submit">Cadastrar</button>
+
+                <!-- Botão para trocar de aba -->
+                <button class="submit" type="button" onclick="mostrarLogin()">Login</button>
+
             </div>
+
+            <!-- ==================== FORMULÁRIO DE LOGIN ==================== -->
+            <div id="formLogin" class="principal__formulario" style="display: none;">
+
+                <div class="principal__formulario--email">
+                    <i class="fas fa-envelope"></i>
+                    <input id="emailLogin" type="email" placeholder="Email">
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="senhaLogin" type="password" placeholder="Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('senhaLogin', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <button id="btnLogin" class="submit" type="button">Entrar</button>
+
+                <!-- Voltar para o cadastro -->
+                <button class="submit" type="button" onclick="mostrarCadastro()">Cadastrar</button>
+
+            </div>
+
         </div>
     </div>
 </body>
+
 <script src="login.js" defer></script>
 <script src="router.js"></script>
-
 </html>
