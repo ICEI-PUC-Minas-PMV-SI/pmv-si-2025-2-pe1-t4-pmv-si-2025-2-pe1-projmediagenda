@@ -9,7 +9,7 @@ Nossos arquivos do projeto de interface, com todas as telas do sistema e como o 
 
 Dentro de nosso User Flow, destacamos as principais página/aba específica de nossa aplicação, mostrando ao usuário como ele poderá navegar sem muitas dificuldades. Nosso User Flow foi o anexado a seguir:
 ![Image](https://github.com/user-attachments/assets/ce4ceaf7-078c-407e-97e2-4532cacf994f)
-
+<img width="1587" height="2245" alt="Image" src="https://github.com/user-attachments/assets/afcd42c5-1984-44d1-ac40-8419d55650be" />
 
 ### Menu
 
