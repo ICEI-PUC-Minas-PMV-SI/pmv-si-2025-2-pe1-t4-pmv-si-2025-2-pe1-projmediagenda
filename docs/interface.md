@@ -8,7 +8,7 @@ Nossos arquivos do projeto de interface, com todas as telas do sistema e como o 
 ## User Flow
 
 Dentro de nosso User Flow, destacamos as principais página/aba específica de nossa aplicação, mostrando ao usuário como ele poderá navegar sem muitas dificuldades. Nosso User Flow foi o anexado a seguir:
-<img width="1600" height="804" alt="Image" src="https://github.com/user-attachments/assets/afcd42c5-1984-44d1-ac40-8419d55650be" />
+<img width="1600" height="804" alt="Image" src="../../pmv-si-2025-2-pe1-t4-pmv-si-2025-2-pe1-projmediagenda/docs/img/userflow2.png" />
 
 ### Menu
 
