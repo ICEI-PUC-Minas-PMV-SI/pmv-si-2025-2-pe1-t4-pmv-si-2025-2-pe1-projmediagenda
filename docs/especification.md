@@ -48,9 +48,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001|A aplicação deve permitir que o usuário gerencie suas tarefas pelo calendario. | ALTA |  
+|RF-001|A aplicação deve permitir que o usuário visualizar suas tarefas pelo calendario. | ALTA |  
 |RF-002|A aplicação deve ter uma interface prática e intuitiva| MÉDIA |
-|RF-003|A aplicação deve ter uma aba para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login.| ALTA |
+|RF-003|A aplicação deve ter um login para cadastro do usuario (senha + gmail.com.br) sendo possivél guardar o login.| ALTA |
 |RF-004|A aplicação deve seguir um padrão de cores para sua interface.| MÉDIA |
 |RF-005|Deve ser possivel acompanhar os resultados é o nivel de aprendizado do cliente .| ALTA |
 |RF-006|A aplicação deve ter um calendário que permita anotações, marcações,lembretes para o usuario.| MÉDIA |
@@ -66,7 +66,7 @@ RF-009 |A aplicação deve ter um quiz psicologico com acompanhamento do resulta
 |RNF-001|Suporte para outros indiomas . | MÉDIA | 
 |RNF-002|Ser compativel com todos os modelos de tela . | MÉDIA | 
 |RNF-003|Integrar calendarios externos.| BAIXA |
-|RNF-004|O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho o.| ALTA |
+|RNF-004|O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa de desempenho.| ALTA |
 |RNF-005|Login multifator.| BAIXA |
 |RNF-006|Deve funcionar em dispositivos móveis e desktops.| MÉDIA |
 |RNF-007|O sistema deve ser compatível com navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edg)| ALTA |

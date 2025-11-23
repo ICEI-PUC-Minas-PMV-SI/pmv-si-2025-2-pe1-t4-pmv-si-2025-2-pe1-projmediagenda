@@ -23,11 +23,16 @@ body {
     font-family: var(--fonte-primaria);
 }
 
+/* CONTAINER GERAL DA PÁGINA */
 .container {
+    min-height: 100vh;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    color: var(--verde-escuro2);
 }
 
+/* (restos de menu lateral, se forem usados em outras telas) */
 .menu {
     display: flex;
     width: 230px;
@@ -53,7 +58,7 @@ button {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .menu button:hover {
@@ -67,12 +72,7 @@ img {
     margin-left: 10px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--verde-escuro2);
-}
+/* ÁREA PRINCIPAL DO LOGIN/CADASTRO */
 
 .principal__texto {
     margin-top: 3%;
@@ -100,8 +100,8 @@ img {
     padding: 8px 15px;
     margin: 5px 10px;
     border-radius: 20px;
-    border: 1px solid #ccc;
     border: solid 3px var(--verde-medio);
+    background-color: #fff;
 }
 
 .principal__formulario input[type="date"]::before {
@@ -110,10 +110,34 @@ img {
     color: #999;
 }
 
+/* BOTÕES PRINCIPAIS */
+
 .submit {
-    margin-top: 25px;
     width: 20rem;
+    /* tiramos margin-top daqui para controlar no grupo */
 }
+
+/* GRUPO DE BOTÕES (Cadastrar / Login, Entrar / Cadastrar) */
+.button-group {
+    display: flex;
+    flex-direction: column;   /* força um embaixo do outro */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* botão secundário (Login no cadastro / Cadastrar no login) – opcional */
+.secundario {
+    background-color: var(--verde-medio);
+    opacity: 0.95;
+}
+
+.secundario:hover {
+    opacity: 1;
+}
+
+/* alguns estilos genéricos que você já tinha */
 
 .sidebar button {
     width: 100%;
@@ -130,11 +154,11 @@ img {
     text-align: center;
 }
 
+/* SENHA + ÍCONE DE OLHO */
 
 .senha-container {
     position: relative;
 }
-
 
 .senha-container input {
     padding-right: 20px;

@@ -1,9 +1,9 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
+Neste projeto será realizado um tipo de teste:
 
  - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
+<!-- O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. -->
 
 Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
 
@@ -12,9 +12,9 @@ A documentação dos testes é dividida nas seguintes seções:
  - [Plano de Testes de Software](#plano-de-testes-de-software)
  - [Registro dos Testes de Software](#registro-dos-testes-de-software)
  - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
+<!-- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
  - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
- - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
+ - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade) -->
 
 # Teste de Software
 
@@ -22,49 +22,86 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 ## Plano de Testes de Software
 
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
-
 **Caso de Teste** | **CT01 - Criar conta parte 1**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
+**Procedimento**  | 1) Acesse o endereço http://127.0.0.1:5500/Implementa%C3%A7%C3%A3o%20da%20solu%C3%A7%C3%A3o/funcionalidade%20do%20Sistema/telas%20totais/login/telalogin.html <br> 2) Preencha todos os campos do formulário  <br> 3) Clique em cadastrar <br> 
+**Requisitos associados** | RF-003
 **Resultado esperado** | Prosseguir para a parte 2 do cadastro
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Fazer login com conta valida 2**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Clikar no botão "login" <br> 2) Preencher os campos <br> 3) Clikar no botão Entrar
+**Requisitos associados** | RF-003
+**Resultado esperado** | login realizado com sucesso
+**Dados de entrada** | Inserção de dados válidos no formulário de Login
 **Resultado obtido** | Sucesso
+
+
+**Caso de Teste** | **CT03 - Fazer anotação no calendário**
+ :--------------: | ------------
+**Procedimento**  | 1) Clikar em cima do dia ao qual se pretende anexar uma anotação <br> 2) Preencher a box com as informações <br> 3) Clikar no botão Salvar
+**Requisitos associados** | RF-006
+**Resultado esperado** | Anotação Salva
+**Dados de entrada** | Anotações
+**Resultado obtido** | Salvo (em formato de icone de  "." no canto inferior direito.)
+
+
+**Caso de Teste** | **CT04 - Visualização das anotações**
+ :--------------: | ------------
+**Procedimento**  | 1) Clikar em cima do dia ao qual se quer no calendario <br> 2) analisar as atividades registradas <br> 
+**Requisitos associados** | RF-001
+**Resultado esperado** | visualização da atividade 
+**Dados de entrada** | Criação da  atividade em Registro Agenda
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT05 - Quiz psicologico **
+ :--------------: | ------------
+**Procedimento**  | 1) Avaliar-se de 1 a 10 em 3 quesitos propostos <br> 2) Enviar as respostas <br> 
+**Requisitos associados** | RF-009
+**Resultado esperado** |  Um painel dando a media das 3 respostas e chegando a um resultado final.
+**Dados de entrada** | Escolhas das notas.
+**Resultado obtido** | A média delas e sua frase motivacional.
 
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Criar conta*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Requisito Associado | RF-003 - A aplicação deve permitir que os usuários criem uma conta e acessem o site|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/420572469b83e987/EQayfJIZxitJl6DauEaSQ7gBevSOuJQ_zlzS6VY9kWWhGg?e=at0tjp| 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - fazer login*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-003 -  A aplicação deve permitir fazer o login com os usuarios ja cadastrados  e armazenados.|
+|Link do vídeo do teste realizado: |   https://1drv.ms/v/c/420572469b83e987/EQuOetfcQxBIrMczVQVjjckBYt1_Y8vLNtfr5DrhvPExMA?e=Z5eXov |
 
+|*Caso de Teste*                                 |*CT03 - fazer anotações*                                        |
+|---|---|
+|Requisito Associado | RF-006 -  A aplicação deve Permitir que o usuario faça as anotações e as salve representando com o seu devido icone.|
+|Link do vídeo do teste realizado: |   https://1drv.ms/v/c/420572469b83e987/EYm73-LvzhVHijxPBhrv_6cBaveNbAQeV933XPc98Tsufg?e=BQja7u  |
+
+|*Caso de Teste*                                 |*CT04 - fazer Atividades*                                        |
+|---|---|
+|Requisito Associado | RF-001 -  A aplicação deve permitir que o usuario crie atividades no registro agenda e as veja no calendário.|
+|Link do vídeo do teste realizado: |   https://1drv.ms/v/c/420572469b83e987/Edopeq8Jfh9BoV4nNdrEGs0BaDQrB83O5tAvvo-gtgcndA?e=1jk9cP |
+
+|*Caso de Teste*                                 |*CT05 - Quiz psicologico*                                        |
+|---|---|
+|Requisito Associado | RF-001 -  A aplicação deve permitir que o usario faça o quiz e receba o devido resultado.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/c/420572469b83e987/EW_rVZlFVAJFkCfv4zV2hUUBu0OYDEOTNPKJ55RYNo7YNQ?e=okSEdf |
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
+Bom os testes foram todos coesos com o proposito das funções, os pontos fracos foram que, certas informações não foram tão otimizadas. iUm exemplos são os reultado do quiz. Porém estão entregues dentre dos parametros de funcionamento. No mais as coisas fluiram até que bem, futuramente possa haver mais melhorias. Mas até aqui e isso mesmo.
+<!--
 ## Testes de unidade automatizados (Opcional)
 
 Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
 
-# Testes de Usabilidade
+## Testes de Usabilidade
 
 O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
 
@@ -143,6 +180,7 @@ Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
 
 Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+--->
 
 
 
