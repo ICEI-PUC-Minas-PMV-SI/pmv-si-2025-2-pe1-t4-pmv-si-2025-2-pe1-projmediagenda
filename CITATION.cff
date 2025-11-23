@@ -1,7 +1,7 @@
 # This CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to generate yours today!
 
-cff-version: 1.0.1
+cff-version: 1.0.2
 title: Uma Agenda Medica.
 message: >-
   Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
@@ -38,5 +38,5 @@ Começamos a procura da motivação da criação do site. No qual seria o proble
 keywords:
  - Medico
  - Agenda
-version: 1.0.1
+version: 1.0.2
 date-released: '2025-23-11'

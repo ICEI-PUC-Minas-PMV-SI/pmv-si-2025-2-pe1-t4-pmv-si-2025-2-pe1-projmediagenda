@@ -77,11 +77,25 @@
         <button id="save-note">Salvar</button>
         <button id="close-modal">Fechar</button>
       </div>
+      <!-- LISTA DE ATIVIDADES DO DIA -->
+      <div id="day-tasks" class="day-tasks"></div>
+      <div class="modal-actions">
+      </div>
     </div>
   </div>
-
+ 
   <script src="calendario.js"></script>
   <script src="router.js" defer></script>
+  <!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
 </body>
 
 </html>

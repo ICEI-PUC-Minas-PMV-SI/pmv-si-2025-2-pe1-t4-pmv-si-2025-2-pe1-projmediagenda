@@ -158,16 +158,22 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
-
-@media (max-width: 900px) {
-  .sidebar {
-    width: 200px;
-  }
-  .container {
-    gap: 20px;
-  }
+/* dark mode*/
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
 }
+
+body.dark-mode .sidebar {
+  background-color: #202320;
+  border-right-color: #445A38;
+}
+
+
+
+
 @media (max-width: 768px) {
+
   .container {
     flex-direction: column;
     align-items: center;
@@ -177,43 +183,81 @@ body {
     width: 100%;
     border-right: none;
     border-bottom: 3px solid var(--verde-escuro);
-    padding-bottom: 20px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .sidebar button {
+  .sidebar .logo {
+    margin-bottom: 16px;
+  }
+
+  .sidebar .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sidebar .menu .bnt-route {
     width: 80%;
-  }
-
-  .form-area {
-    width: 90%;
     max-width: 400px;
   }
-}
-@media (max-width: 500px) {
 
-  .sidebar button {
+  
+  .main-content {
     width: 100%;
-    font-size: 1rem;
-    padding: 12px;
+    max-width: 600px;
+    padding: 0 16px 24px;
+
+    margin-top: 56px;   
   }
 
-  .form-area input {
-    font-size: 0.95rem;
-  }
-
-  .title {
-    font-size: 1.6rem;
+  .resultado-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
     text-align: center;
   }
 }
+
+/* Celular */
+@media (max-width: 500px) {
+
+  .sidebar .menu .bnt-route {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .main-content {
+    margin-top: 48px;
+    padding: 0 12px 24px;
+  }
+
+  .resultado-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Celular muito pequeno */
 @media (max-width: 380px) {
-  .form-area input,
-  .sidebar button {
+
+  .sidebar .menu .bnt-route {
     font-size: 0.85rem;
     padding: 10px;
   }
 
-  .title {
+  .main-content {
+    margin-top: 200px;
+  }
+
+  .resultado-title {
+
     font-size: 1.4rem;
   }
 }

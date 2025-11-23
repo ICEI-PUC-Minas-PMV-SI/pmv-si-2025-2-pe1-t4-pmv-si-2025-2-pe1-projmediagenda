@@ -64,5 +64,15 @@
 
 <script src="router.js"></script>
 <script src="resultado.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
 
 </html>

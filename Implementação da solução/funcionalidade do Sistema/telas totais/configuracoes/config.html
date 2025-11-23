@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configurações | MediAgenda</title>
+    <title>Configurações - MediAgenda</title>
     <link rel="stylesheet" href="config.css">
 </head>
 
@@ -56,14 +56,25 @@
                     placeholder="Cole o link do seu calendário (ex: Google, Outlook)">
                 <button id="anexar-btn">Anexar</button>
             </section>
-
             <!-- Mensagem -->
             <p id="mensagem"></p>
         </main>
     </div>
 
+
     <script src="config.js"></script>
     <script src="router.js"></script>
+    <!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+
 </body>
 
 </html>

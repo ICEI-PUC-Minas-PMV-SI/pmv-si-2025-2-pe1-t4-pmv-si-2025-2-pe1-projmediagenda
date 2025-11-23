@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MediAgenda — Menu Lateral</title>
+  <title>Menu</title>
   <link rel="stylesheet" href="menu.css" />
 </head>
 
@@ -51,5 +51,15 @@
   </div>
 </body>
 <script src="router.js" defer></script>
-
+<script src="menu.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
 </html>

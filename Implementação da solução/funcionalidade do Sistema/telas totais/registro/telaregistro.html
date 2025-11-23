@@ -11,10 +11,8 @@
 <body>
   <div class="container">
 
-    <!-- ===== Sidebar (idêntica à tela de Login) ===== -->
     <aside class="sidebar">
       <div class="logo">
-        <!-- ajuste o caminho da logo conforme sua estrutura -->
         <img src="../../../../docs/img/logo1.png" alt="Logo MediAgenda" />
       </div>
 
@@ -27,11 +25,9 @@
         <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
       </nav>
     </aside>
-    <!-- ===== /Sidebar ===== -->
 
-    <!-- ===== Conteúdo principal ===== -->
     <main class="main">
-      <!-- Formulário -->
+
       <section class="form-container" aria-labelledby="titulo-form">
         <h1 id="titulo-form">Registro de Atividades</h1>
 
@@ -52,6 +48,11 @@
           </div>
 
           <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" />
+          </div>
+
+          <div class="form-group">
             <label for="cor">Cor</label>
             <input type="color" id="cor" name="cor" value="#8AA98A" />
           </div>
@@ -60,18 +61,26 @@
         </form>
       </section>
 
-      <!-- Lista de registros -->
       <section class="registros-container" aria-labelledby="titulo-lista">
         <h2 id="titulo-lista">Atividades Registradas</h2>
         <div class="lista-registros" id="listaRegistros">
-          <!-- Registros via JS -->
+
         </div>
       </section>
     </main>
-    <!-- ===== /Conteúdo principal ===== -->
-
   </div>
 </body>
 <script src="router.js" defer></script>
+<script src="telaregistro.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
 
 </html>

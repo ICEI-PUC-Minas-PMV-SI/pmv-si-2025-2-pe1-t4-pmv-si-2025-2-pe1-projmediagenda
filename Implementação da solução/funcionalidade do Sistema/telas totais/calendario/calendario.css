@@ -119,10 +119,17 @@ body {
   font-size: 1rem;
 }
 
+/* CALENDÁRIO COMO CARD */
 .calendar {
   width: 100%;
+  background-color: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--verde-claro);
+  overflow: hidden;
 }
 
+/* grade dias/semana */
 .weekdays,
 .days {
   display: grid;
@@ -130,29 +137,46 @@ body {
   text-align: center;
 }
 
+/* cabeçalho dos dias da semana */
 .weekdays div {
-  background-color: var(--branco);
+  background-color: #f4f8ee;
   padding: 0.8rem 0;
-  font-weight: bold;
+  font-weight: 600;
+  color: var(--verde-escuro2);
+  border-bottom: 1px solid var(--verde-claro);
 }
 
+/* células dos dias */
 .days div {
   padding: 1.5rem 0.5rem;
-  border: 1px solid #ddd;
   min-height: 70px;
   position: relative;
   cursor: pointer;
-  transition: 0.3s;
+  background-color: var(--branco);
+  color: var(--texto);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+
+  border-right: 1px solid #d7e6c8;
+  border-bottom: 1px solid #d7e6c8;
+}
+
+/* remove borda direita na última coluna */
+.days div:nth-child(7n) {
+  border-right: none;
 }
 
 .days div:hover {
-  background-color: var(--verde-claro);
+  background-color: #f2faea;
+  transform: translateY(-1px);
 }
 
+/* dia atual */
 .today {
   background-color: var(--verde-medio);
-  color: white;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 4px;
+  box-shadow: 0 0 0 2px #e6f2da;
 }
 
 /* MARCAÇÃO DE ANOTAÇÕES */
@@ -163,6 +187,19 @@ body {
   position: absolute;
   bottom: 5px;
   right: 10px;
+}
+
+/* MARCAÇÃO DE ATIVIDADE (pontinho em cima) */
+.day-has-activity::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--verde-medio);
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* MODAL */
@@ -220,6 +257,81 @@ body {
   background-color: var(--verde-escuro);
 }
 
+/* lista de atividades no modal */
+.day-tasks {
+  margin-bottom: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #f5f7f0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.day-tasks h4 {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--verde-escuro2);
+}
+
+.day-tasks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.day-tasks li {
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+
+.sem-tarefas {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --------- MODO NOTURNO --------- */
+
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+body.dark-mode .sidebar {
+  background-color: #202320;
+  border-right-color: #445A38;
+}
+
+/* calendário continua CLARO mesmo em dark-mode */
+body.dark-mode .calendar {
+  background-color: #ffffff;
+}
+
+body.dark-mode .weekdays div {
+  background-color: #f4f8ee;
+  color: var(--verde-escuro2);
+}
+
+body.dark-mode .days div {
+  background-color: #ffffff;
+  color: var(--texto);
+  border-right: 1px solid #d7e6c8;
+  border-bottom: 1px solid #d7e6c8;
+}
+
+body.dark-mode .days div:hover {
+  background-color: #f2faea;
+}
+
+body.dark-mode .today {
+  background-color: var(--verde-medio);
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #e6f2da;
+}
+
+body.dark-mode .sem-tarefas {
+  color: #777;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
   .sidebar {
@@ -229,6 +341,7 @@ body {
     gap: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -251,8 +364,8 @@ body {
     max-width: 400px;
   }
 }
-@media (max-width: 500px) {
 
+@media (max-width: 500px) {
   .sidebar button {
     width: 100%;
     font-size: 1rem;
@@ -268,6 +381,7 @@ body {
     text-align: center;
   }
 }
+
 @media (max-width: 380px) {
   .form-area input,
   .sidebar button {
@@ -279,3 +393,5 @@ body {
     font-size: 1.4rem;
   }
 }
+
+

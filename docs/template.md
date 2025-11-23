@@ -7,11 +7,14 @@ O layout geral (cabeçalho, navegação, etc.) seguirá o mesmo padrão em todas
 ## Cores
 
 Os códigos de cores da imagem refere-se a paleta gerada no site color.adobe.com. A paleta contém as seguintes cores:
-#E4E6D9
-#C2CFB5
-#8AA98A
-#48664E
-#25352A
+    #E6E9D7;
+    #CFE0BC;
+    #7FA653;
+    #63783D;
+    #445A38;
+    #E6E9D7;
+    #fff;
+    #2E2E2E;
 
 ![Image](https://github.com/user-attachments/assets/fa7e3ca7-f796-4720-8af7-a610e9d0ce4b)
 
@@ -19,9 +22,9 @@ Os códigos de cores da imagem refere-se a paleta gerada no site color.adobe.com
 
 Dentro das funções de nosso site, as fontes utilizadas em: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
-Titulo da página: Montserrat, tamanhos 15 e 34;
-Título de cada seção: Open Sans, tamanho 15 e 38;
-Rótulo de componente de corpo de texto: Montserrat, tamanhos 12, 15 e 20.
+Titulo da página: Poppins;
+Título de cada seção: Sans-Serif;
+Rótulo de componente de corpo de texto: Sans-Serif.
 
 
 ## Iconografia
@@ -31,3 +34,6 @@ Os ícones que serão utilizados, serão: ícone de 'pessoa' para sinalizar onde
 Para uma visualização melhor, os ícones citados acima, estão todos presentes na imagem anexada a seguir:
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4c2b70d-78a6-4bf1-9c0a-90c726549650" />
+ 
+link da biblioteca de incones utilizada:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">

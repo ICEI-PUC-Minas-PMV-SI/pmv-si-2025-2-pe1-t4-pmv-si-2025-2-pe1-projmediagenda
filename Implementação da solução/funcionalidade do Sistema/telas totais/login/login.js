@@ -1,7 +1,6 @@
 /// Chave usada no localStorage para guardar os usuários
 const STORAGE_KEY = "usuariosMediAgenda";
 const SESSAO_KEY = "usuarioLogado";
-const UM_DIA_MS = 24 * 60 * 60 * 1000; // 1 dia em milissegundos
 
 // ---------- FUNÇÕES UTILITÁRIAS ---------- //
 
@@ -22,50 +21,35 @@ function encontrarUsuarioPorEmail(email) {
   return usuarios.find((u) => u.email === email);
 }
 
-// ---------- SESSÃO (login válido por 1 dia) ---------- //
+// ---------- SESSÃO (válida só enquanto a aba/navegador estiver aberto) ---------- //
 
 function criarSessao(usuario) {
-  const agora = Date.now();
-
-  localStorage.setItem(
+  // sessionStorage some ao fechar a aba ou navegador
+  sessionStorage.setItem(
     SESSAO_KEY,
     JSON.stringify({
       nome: usuario.nome,
       email: usuario.email,
-      loginEm: agora, // momento do login
     })
   );
 }
 
-// Retorna a sessão se ainda for válida, senão retorna null
+// Retorna a sessão se existir; senão, null
 function pegarSessaoValida() {
-  const dados = localStorage.getItem(SESSAO_KEY);
+  const dados = sessionStorage.getItem(SESSAO_KEY);
   if (!dados) return null;
 
   try {
-    const sessao = JSON.parse(dados);
-    if (!sessao.loginEm) {
-      localStorage.removeItem(SESSAO_KEY);
-      return null;
-    }
-
-    const expirou = Date.now() - sessao.loginEm > UM_DIA_MS;
-    if (expirou) {
-      // remove sessão expirada
-      localStorage.removeItem(SESSAO_KEY);
-      return null;
-    }
-
-    return sessao; // ainda está dentro de 1 dia
+    return JSON.parse(dados);
   } catch (e) {
-    localStorage.removeItem(SESSAO_KEY);
+    sessionStorage.removeItem(SESSAO_KEY);
     return null;
   }
 }
 
 // (Opcional) Função para logout, caso queira usar em outro botão/página
 function logout() {
-  localStorage.removeItem(SESSAO_KEY);
+  sessionStorage.removeItem(SESSAO_KEY);
 }
 
 // ---------- FUNÇÃO: verificar força da senha ---------- //
@@ -135,7 +119,7 @@ if (botaoCadastrar) {
     usuarios.push(novoUsuario);
     salvarUsuarios(usuarios);
 
-    // Cria sessão válida por 1 dia
+    // Cria sessão (dura só até fechar a aba/navegador)
     criarSessao(novoUsuario);
 
     alert("Cadastro realizado com sucesso!");
@@ -182,7 +166,7 @@ if (botaoLogin) {
       return;
     }
 
-    // Cria/renova sessão de 1 dia
+    // Cria/renova sessão (dura só até fechar a aba/navegador)
     criarSessao(usuario);
 
     alert("Login realizado com sucesso!");
@@ -192,7 +176,7 @@ if (botaoLogin) {
   });
 }
 
-// ver a senha
+// ver a senha (uma única função)
 function toggleSenha(idCampo, elemento) {
   const input = document.getElementById(idCampo);
   const icone = elemento.querySelector("i");
@@ -207,56 +191,18 @@ function toggleSenha(idCampo, elemento) {
     icone.classList.add("fa-eye");
   }
 }
-// login botão
-function toggleSenha(idCampo, elemento) {
-    const input = document.getElementById(idCampo);
-    const icone = elemento.querySelector("i");
-
-    if (input.type === "password") {
-        input.type = "text";
-        icone.classList.replace("fa-eye", "fa-eye-slash");
-    } else {
-        input.type = "password";
-        icone.classList.replace("fa-eye-slash", "fa-eye");
-    }
-}
-
-function toggleSenha(idCampo, elemento) {
-    const input = document.getElementById(idCampo);
-    const icone = elemento.querySelector("i");
-
-    if (input.type === "password") {
-        input.type = "text";
-        icone.classList.replace("fa-eye", "fa-eye-slash");
-    } else {
-        input.type = "password";
-        icone.classList.replace("fa-eye-slash", "fa-eye");
-    }
-}
-
-function toggleSenha(idCampo, elemento) {
-    const input = document.getElementById(idCampo);
-    const icone = elemento.querySelector("i");
-
-    if (input.type === "password") {
-        input.type = "text";
-        icone.classList.replace("fa-eye", "fa-eye-slash");
-    } else {
-        input.type = "password";
-        icone.classList.replace("fa-eye-slash", "fa-eye");
-    }
-}
 
 // Mostrar tela de login
 function mostrarLogin() {
-    document.getElementById("formCadastro").style.display = "none";
-    document.getElementById("formLogin").style.display = "block";
-    document.getElementById("tituloTela").innerText = "FAÇA SEU LOGIN";
+  document.getElementById("formCadastro").style.display = "none";
+  document.getElementById("formLogin").style.display = "block";
+  document.getElementById("tituloTela").innerText = "FAÇA SEU LOGIN";
 }
 
 // Voltar para tela de cadastro
 function mostrarCadastro() {
-    document.getElementById("formLogin").style.display = "none";
-    document.getElementById("formCadastro").style.display = "block";
-    document.getElementById("tituloTela").innerText = "CADASTRE-SE AQUI";
+  document.getElementById("formLogin").style.display = "none";
+  document.getElementById("formCadastro").style.display = "block";
+  document.getElementById("tituloTela").innerText = "CADASTRE-SE AQUI";
 }
+

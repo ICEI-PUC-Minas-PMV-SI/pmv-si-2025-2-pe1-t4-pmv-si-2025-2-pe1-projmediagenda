@@ -20,6 +20,13 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 let selectedDate = null;
 
+// dia selecionado (para o número grande lá em cima)
+let selectedDay = null;
+let selectedMonth = null;
+let selectedYear = null;
+
+// ----------------- LOCALSTORAGE -----------------
+
 function getNotes() {
   return JSON.parse(localStorage.getItem("notes") || "{}");
 }
@@ -28,6 +35,13 @@ function saveNotes(notes) {
   localStorage.setItem("notes", JSON.stringify(notes));
 }
 
+function getAtividades() {
+  // mesmas atividades salvas na tela de registro
+  return JSON.parse(localStorage.getItem("atividades") || "[]");
+}
+
+// ----------------- CALENDÁRIO -----------------
+
 function renderCalendar(month, year) {
   daysContainer.innerHTML = "";
 
@@ -35,13 +49,33 @@ function renderCalendar(month, year) {
   const lastDate = new Date(year, month + 1, 0).getDate();
 
   monthName.textContent = months[month];
-  monthNumber.textContent = (month + 1).toString().padStart(2, "0");
   yearDisplay.textContent = year;
   monthSelect.value = month;
 
-  const notes = getNotes();
+  // Define qual dia mostrar em destaque no topo
+  let dayToShow;
 
-  // espaços em branco
+  if (
+    selectedDay !== null &&
+    selectedMonth === month &&
+    selectedYear === year
+  ) {
+    dayToShow = selectedDay;
+  } else if (
+    month === currentDate.getMonth() &&
+    year === currentDate.getFullYear()
+  ) {
+    dayToShow = currentDate.getDate();
+  } else {
+    dayToShow = 1;
+  }
+
+  monthNumber.textContent = dayToShow.toString().padStart(2, "0");
+
+  const notes = getNotes();
+  const atividades = getAtividades();
+
+  // espaços em branco antes do 1º dia
   for (let i = 0; i < firstDay; i++) {
     const emptyDiv = document.createElement("div");
     daysContainer.appendChild(emptyDiv);
@@ -51,34 +85,82 @@ function renderCalendar(month, year) {
     const dayDiv = document.createElement("div");
     dayDiv.textContent = day;
 
+    // chave antiga das notas (mantida)
     const dateKey = `${year}-${month + 1}-${day}`;
 
-    // marca dia atual
+    // chave ISO usada nas atividades: "YYYY-MM-DD"
+    const isoKey = `${year}-${String(month + 1).padStart(2, "0")}-${String(
+      day
+    ).padStart(2, "0")}`;
+
+    // dia de hoje
     if (
       day === currentDate.getDate() &&
       month === currentDate.getMonth() &&
-      year === currentDate.getFullYear()
+      year === currentYear
     ) {
       dayDiv.classList.add("today");
     }
 
-    // marca se tiver anotação
+    // tem anotação?
     if (notes[dateKey]) {
       dayDiv.classList.add("day-has-note");
     }
 
-    // abrir modal
-    dayDiv.addEventListener("click", () => openNoteModal(dateKey));
+    // tem pelo menos uma atividade neste dia?
+    const hasActivity = atividades.some((atividade) => atividade.data === isoKey);
+    if (hasActivity) {
+      dayDiv.classList.add("day-has-activity");
+    }
+
+    // clique no dia -> abre modal com lista de atividades + anotação
+    dayDiv.addEventListener("click", () => {
+      selectedDate = dateKey;
+      selectedDay = day;
+      selectedMonth = month;
+      selectedYear = year;
+
+      monthNumber.textContent = day.toString().padStart(2, "0");
+
+      openNoteModal(dateKey, isoKey);
+    });
 
     daysContainer.appendChild(dayDiv);
   }
 }
 
-function openNoteModal(dateKey) {
-  selectedDate = dateKey;
+// anotação + listinha de tarefas) 
+
+function openNoteModal(dateKey, isoKey) {
   const notes = getNotes();
-  modalDate.textContent = `Anotações de ${dateKey}`;
+  const atividades = getAtividades();
+  const tasksContainer = document.getElementById("day-tasks");
+
+  modalDate.textContent = `Dia ${isoKey}`;
   noteText.value = notes[dateKey] || "";
+
+  if (tasksContainer) {
+    const tarefasDia = atividades.filter((atividade) => atividade.data === isoKey);
+
+    if (tarefasDia.length === 0) {
+      tasksContainer.innerHTML =
+        '<p class="sem-tarefas">Nenhuma atividade registrada para este dia.</p>';
+    } else {
+      const items = tarefasDia
+        .map((t) => {
+          const hora = t.horario || "--:--";
+          const titulo = t.titulo || "Sem título";
+          return `<li><strong>${hora}</strong> — ${titulo}</li>`;
+        })
+        .join("");
+
+      tasksContainer.innerHTML = `
+        <h4>Atividades do dia</h4>
+        <ul>${items}</ul>
+      `;
+    }
+  }
+
   modal.style.display = "flex";
 }
 
@@ -107,7 +189,7 @@ window.addEventListener("click", (e) => {
 
 // altera mês
 monthSelect.addEventListener("change", () => {
-  currentMonth = parseInt(monthSelect.value);
+  currentMonth = parseInt(monthSelect.value, 10);
   renderCalendar(currentMonth, currentYear);
 });
 
