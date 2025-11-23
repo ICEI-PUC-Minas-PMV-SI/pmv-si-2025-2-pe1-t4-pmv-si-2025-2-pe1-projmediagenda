@@ -96,7 +96,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 ## Avaliação dos Testes de Software
 
 Bom os testes foram todos coesos com o proposito das funções, os pontos fracos foram que, certas informações não foram tão otimizadas. iUm exemplos são os reultado do quiz. Porém estão entregues dentre dos parametros de funcionamento. No mais as coisas fluiram até que bem, futuramente possa haver mais melhorias. Mas até aqui e isso mesmo.
-<!--
+
 ## Testes de unidade automatizados (Opcional)
 
 Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
@@ -132,44 +132,88 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | Você e uma pessoa que deseja se cadastrar no Site do MediAgenda. |
+| 2             | Você é uma pessoa que deseja fazer login no site do MediAgenda. |
+| 3             | Você é uma pessoa que esta tentando fazer anotações  para regular suas tarefas. |
+| 4             | Você é uma pessoa que deseja saber  como está psicologicamente . |
+| 5             | Você é uma pessoa que deseja registrar suas atividades. |
 
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você e uma pessoa que deseja se cadastrar no site do Mediagenda e conhecer o site
+.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM             | 5                    | 30.09 segundos                  |
+| 2       | SIM             | 5                    | 25.18 segundos                  |
+| 3       | SIM             | 5                    | 33.19 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 28.02 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Média**     | 100%           | 5                | 29.42 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 12.36 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
+    Comentários dos usuários: Achei o site muito bom e intuitivo. A troca de paginas e bem rápida. 
     Não tive dificuldades e acho que ficou bem intuitivo.
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: Você é uma pessoa que deseja fazer login no site do MediAgenda.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 4                    | 36.21 segundos                          |
+| 1       | SIM             | 5                    | 12.44 segundos                          |
+| 2       | SIM             | 5                    | 15.32 segundos                          |
+| 3       | SIM             | 5                    | 16.91 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Média**     | 100%           | 5               | 15.2 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 11.57 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: O site é fácil de acessar, principalmente pelo fato de armazenar meu cadastro para que eu possa fazer o login mais rapidamente.
+
+Cenário 3: Você é uma pessoa que esta tentando fazer anotações  para regular suas tarefa.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 35.34 segundos                          |
+| 2       | SIM             | 3                    | 40.52 segundos                          |
+| 3       | SIM             | 4                    | 36.01 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 3.66                | 37.29 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 4 | 20.57 segundos |
+
+
+    Comentários dos usuários: Visualmente o calendario e  bonito, mas o formato com que tem que se anotar não e tão intuitivo, pois não há nenhuma instrução, mas quando se descobre e facilmente compreendido.
+
+Cenário 4: Você é uma pessoa que deseja saber  como está psicologicamente.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 22.34 segundos                          |
+| 2       | SIM             | 5                    | 25.22 segundos                          |
+| 3       | SIM             | 4                    | 18.29 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 21.59 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.00 segundos |
+
+
+    Comentários dos usuários:  O formato de se auto avaliar e muito legal, mas poderia ser  melhor se os conselhos fossem mais motivadores, mas continua sendo funcional.
+
+Cenário 5: Você é uma pessoa que deseja registrar suas atividades.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 22.54 segundos                          |
+| 2       | SIM             | 5                   | 30.42 segundos                          |
+| 3       | SIM             | 4                    | 26.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.33                | 26.39 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 15.57 segundos |
+
+
+    Comentários dos usuários:  Conseguir registrar minhas atividades foram demasiadamnete facil, porém achei meio simples o formato em que elas eram registradas, no mais, funcionou perfeitamente.
 
 ## Avaliação dos Testes de Usabilidade
 
@@ -179,7 +223,7 @@ Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos
 
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Contudo, tendo em vista que a diferença foi relevante (por exemplo, 111 segundos — média usuários — contra 20.57 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
 --->
 
 
