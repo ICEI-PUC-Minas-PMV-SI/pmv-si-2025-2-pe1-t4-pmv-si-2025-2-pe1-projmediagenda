@@ -68,7 +68,7 @@ button {
 
 img {
     padding-bottom: 5px;
-    width: 200px;
+    width: 300px;
     margin-left: 10px;
 }
 
@@ -178,6 +178,7 @@ img {
 .toggleSenha:hover {
     opacity: 1;
 }
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
