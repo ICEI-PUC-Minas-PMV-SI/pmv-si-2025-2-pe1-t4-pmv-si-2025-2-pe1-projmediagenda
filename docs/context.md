@@ -19,7 +19,6 @@ Objetivo Geral: Desenvolver um software para auxiliar e organizar, vida pessoal,
 
 Objetivo específico:
 	- Disponibilizar um calendário otimizado para a rotina médica, permitindo a classificação de atividades por categorias como plantões, aulas e provas e o tempo dedicado a cada uma delas.
-	- Implementar recursos de estudo e revisão, como acesso rápido a protocolos de emergência.
 	- Oferecer ferramentas para o registro e acompanhamento do progresso de aprendizado do usuário.
 
 ## Justificativa
