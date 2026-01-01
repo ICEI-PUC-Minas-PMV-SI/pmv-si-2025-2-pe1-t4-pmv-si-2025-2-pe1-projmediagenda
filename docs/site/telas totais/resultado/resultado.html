@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediAgenda - Resultado</title>
+  <link rel="stylesheet" href="resultado.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ==== MENU LATERAL ==== -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../../../docs/img/logo1.png" alt="logo MediAgenda">
+
+      </div>
+
+      <nav class="menu">
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+      </nav>
+    </aside>
+
+    <!-- ==== CONTEÚDO PRINCIPAL ==== -->
+    <main class="main-content">
+      <div class="resultado-wrapper">
+        <h1 class="resultado-title">Resultado</h1>
+
+        <div class="resultado-content">
+          <p class="avaliacao">AVALIAÇÃO: <span id="media">0</span></p>
+
+          <!-- 🎯 NOVO VELOCÍMETRO -->
+          <div class="speed-container">
+            <svg class="speed-arc" viewBox="0 0 300 180">
+              <path d="M20 150 A130 130 0 0 1 280 150" stroke="#7FA653"
+                stroke-width="18" fill="none" />
+              <line id="pointer" x1="150" y1="150" x2="150" y2="50" />
+            </svg>
+            <span class="speed-center-value" id="speed-value">0</span>
+          </div>
+        </div>
+
+        <div class="mensagem-box">
+          <strong>Mensagem:</strong>
+          <p class="mensagem-texto">
+          <p> 1 A 3 - SEU CORPO E MENTE JÁ PEDEM ATENÇÃO. TENTE ORGANIZAR MELHOR SUA ROTINA, INCLUIR PAUSAS E CUIDAR DO SONO.</p>
+          <p> 4 A 7 - VOCÊ ESTA NO CAMINHO CERTO. CONTINUE MELHORANDO E FOCANDO NOS OBJETIVOS A SUA FRENTE QUE COM CERTEZA VOCÊ VAI SE SOBRESSAIR.</p>
+          <p> 7 A 9  - PARABÉNS. VOCÊ ESTÁ SE DANDO MUITO BEM, VC E INCRÍVEL</p>
+          <p> 10 - AGORA SIM. CHEGAMOS AONDE QUERIAMOS. CONTINUE ASSIM QUE VOCÊ IRÁ ALCANÇAR LUGARES INIMAGINAVÉIS.</p>
+          </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+
+<script src="router.js"></script>
+<script src="resultado.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+
+</html>

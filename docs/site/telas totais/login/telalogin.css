@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --cor-fundo: #E6E9D7;
+    --verde-claro: #CFE0BC;
+    --verde-medio: #7FA653;
+    --verde-escuro: #63783D;
+    --verde-escuro2: #445A38;
+    --fundo: #E6E9D7;
+    --branco: #fff;
+    --texto: #2E2E2E;
+    --fonte-primaria: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-primaria);
+}
+
+/* CONTAINER GERAL DA PÁGINA */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--verde-escuro2);
+}
+
+/* (restos de menu lateral, se forem usados em outras telas) */
+.menu {
+    display: flex;
+    width: 230px;
+    border-right: solid 4px var(--verde-escuro2);
+}
+
+.menu__lateral {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--verde-medio);
+    color: var(--branco);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: var(--verde-escuro);
+    transform: scale(1.03);
+}
+
+img {
+    padding-bottom: 5px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+/* ÁREA PRINCIPAL DO LOGIN/CADASTRO */
+
+.principal__texto {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.principal__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.principal__formulario i {
+    font-size: 24px;
+    color: var(--verde-medio);
+    margin-right: 15px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.principal__formulario input {
+    width: 250px;
+    height: 40px;
+    padding: 8px 15px;
+    margin: 5px 10px;
+    border-radius: 20px;
+    border: solid 3px var(--verde-medio);
+    background-color: #fff;
+}
+
+.principal__formulario input[type="date"]::before {
+    content: attr(placeholder);
+    width: 100%;
+    color: #999;
+}
+
+/* BOTÕES PRINCIPAIS */
+
+.submit {
+    width: 20rem;
+    /* tiramos margin-top daqui para controlar no grupo */
+}
+
+/* GRUPO DE BOTÕES (Cadastrar / Login, Entrar / Cadastrar) */
+.button-group {
+    display: flex;
+    flex-direction: column;   /* força um embaixo do outro */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* botão secundário (Login no cadastro / Cadastrar no login) – opcional */
+.secundario {
+    background-color: var(--verde-medio);
+    opacity: 0.95;
+}
+
+.secundario:hover {
+    opacity: 1;
+}
+
+/* alguns estilos genéricos que você já tinha */
+
+.sidebar button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+}
+
+.form-area input {
+    font-size: 0.95rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* SENHA + ÍCONE DE OLHO */
+
+.senha-container {
+    position: relative;
+}
+
+.senha-container input {
+    padding-right: 20px;
+}
+
+/* ícone do olho */
+.toggleSenha {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.toggleSenha:hover {
+    opacity: 1;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid var(--verde-escuro);
+        padding-bottom: 20px;
+    }
+
+    .sidebar button {
+        width: 80%;
+    }
+
+    .form-area {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .principal {
+        min-width: 400px;
+    }
+
+    .sidebar button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .form-area input {
+        font-size: 0.95rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .form-area input,
+    .sidebar button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+}

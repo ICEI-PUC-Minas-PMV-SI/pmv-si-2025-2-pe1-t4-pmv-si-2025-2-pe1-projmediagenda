@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E4E6D9;
+  color: #1e392a;
+}
+
+/* Layout geral */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ==== MENU LATERAL PADRONIZADO ==== */
+.sidebar {
+  background-color: #E6E9D7;
+  width: 11%;
+  border-right: 3px solid #63783D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+/* LOGO E TÍTULO CENTRALIZADOS */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #445A38;
+  margin: 0;
+}
+
+/* ==== MENU BOTÕES ==== */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 220px;
+}
+
+.menu button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #7FA653;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background-color: #63783D;
+  transform: scale(1.03);
+}
+
+/* ==== CONTEÚDO PRINCIPAL ==== */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.quiz-wrapper {
+  text-align: center;
+  max-width: 800px;
+}
+
+.quiz-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e392a;
+}
+
+/* ==== PERGUNTAS ==== */
+.question {
+  margin-bottom: 40px;
+}
+
+.question p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ==== ESCALA 0 A 10 ==== */
+.scale {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Botões 0 a 10 */
+.btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* ===== BOTÃO SELECIONADO ===== */
+.btn.selected {
+  border: 3px solid #000;
+  transform: scale(1.18);
+  box-shadow: 0 0 10px #000;
+}
+
+/* ===== GRADIENTE DE CORES ===== */
+.red { background-color: #d32f2f; }
+.red:hover { background-color: #b71c1c; }
+
+.orange { background-color: #f57c00; }
+.orange:hover { background-color: #ef6c00; }
+
+.yellow { background-color: #fbc02d; color: #000; }
+.lightyellow { background-color: #ffeb3b; color: #000; }
+
+.lime { background-color: #cddc39; color: #000; }
+.lime:hover { background-color: #c0ca33; }
+
+.lightgreen { background-color: #8bc34a; }
+.lightgreen:hover { background-color: #7cb342; }
+
+.green { background-color: #4caf50; }
+.green:hover { background-color: #43a047; }
+
+.darkgreen { background-color: #2e7d32; }
+
+.darkgreen:hover { background-color: #1b5e20; }
+
+/* ===== BOTÃO ENVIAR ===== */
+.send-btn {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background-color: #445A38;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #7FA653;
+  transform: scale(1.05);
+
+}
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+body.dark-mode .sidebar {
+  background-color: #202320;
+  border-right-color: #445A38;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid var(--verde-escuro);
+        padding-bottom: 20px;
+    }
+
+    .sidebar button {
+        width: 80%;
+    }
+
+    .form-area {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .principal {
+        min-width: 400px;
+    }
+
+    .sidebar button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .form-area input {
+        font-size: 0.95rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .form-area input,
+    .sidebar button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+}

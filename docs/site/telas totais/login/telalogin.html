@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telalogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>login MediAgenda</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="../../../../docs/img/logo1.png" alt="logo MediAgenda">
+    </div>
+    <div class="container">
+
+        <div class="principal">
+            <!-- Título principal -->
+            <div class="principal__texto">
+                <h1 id="tituloTela">CADASTRE-SE AQUI</h1>
+            </div>
+
+            <!--  FORMULÁRIO DE CADASTRO -->
+            <div id="formCadastro" class="principal__formulario">
+
+                <div class="principal__formulario--name">
+                    <i class="fas fa-user"></i>
+                    <input id="nomecompleto" type="text" placeholder="Nome Completo">
+                </div>
+
+                <div class="principal__formulario--email">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="senha" type="password" placeholder="Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('senha', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="confirmarSenha" type="password" placeholder="Confirmar Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('confirmarSenha', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <div class="principal__formulario--date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input id="dataNascimento" type="date" placeholder="Data de Nascimento">
+                </div>
+
+                <!-- GRUPO DE BOTÕES DO CADASTRO -->
+                <div class="button-group">
+                    <button class="submit" type="submit">Cadastrar</button>
+                    <button class="submit secundario" type="button" onclick="mostrarLogin()">Login</button>
+                </div>
+
+            </div>
+
+            <!--  FORMULÁRIO DE LOGIN -->
+            <div id="formLogin" class="principal__formulario" style="display: none;">
+
+                <div class="principal__formulario--email">
+                    <i class="fas fa-envelope"></i>
+                    <input id="emailLogin" type="email" placeholder="Email">
+                </div>
+
+                <div class="principal__formulario--senha senha-container">
+                    <i class="fas fa-lock"></i>
+                    <input id="senhaLogin" type="password" placeholder="Senha">
+                    <span class="toggleSenha" onclick="toggleSenha('senhaLogin', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <!-- GRUPO DE BOTÕES DO LOGIN -->
+                <div class="button-group">
+                    <button id="btnLogin" class="submit" type="button">Entrar</button>
+                    <button class="submit secundario" type="button" onclick="mostrarCadastro()">Cadastrar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="login.js" defer></script>
+<script src="router.js"></script>
+
+</html>

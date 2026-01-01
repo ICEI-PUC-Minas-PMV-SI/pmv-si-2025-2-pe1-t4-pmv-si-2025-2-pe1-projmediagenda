@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+      <div class="logo">
+        <!-- troque o src para o caminho da sua logo -->
+        <img src="../../../../docs/img/logo1.png" alt="Logo MediAgenda" />
+        
+      </div>
+
+      <nav class="menu">
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+      </nav>
+    </aside>
+
+    <!-- ÁREA DE CONTEÚDO EXEMPLO (pode remover/alterar) -->
+    <main class="content">
+      <h2 class="page-title">SOBRE O MEDIAGENDA:</h2>
+
+      <section class="card">
+        <p>
+          O MediAgenda é uma plataforma digital desenvolvida especialmente para médicos e
+          residentes, com o objetivo de otimizar a organização da rotina profissional e acadêmica.
+        </p>
+        <ul>
+          <li>Gerenciar compromissos e atividades via calendário interativo.</li>
+          <li>Registrar consultas, plantões, provas e estudos.</li>
+          <li>Personalizar cores para diferenciar tipos de atividades.</li>
+          <li>Acompanhar desempenho e evolução.</li>
+          <li>Ajustar configurações de perfil e notificações.</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+</body>
+<script src="router.js" defer></script>
+<script src="menu.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+</html>

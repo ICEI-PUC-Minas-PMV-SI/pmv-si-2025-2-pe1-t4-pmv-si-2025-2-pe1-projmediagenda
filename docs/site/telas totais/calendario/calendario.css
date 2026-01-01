@@ -1,0 +1,397 @@
+:root {
+  --verde-claro: #CFE0BC;
+  --verde-medio: #7FA653;
+  --verde-escuro: #63783D;
+  --verde-escuro2: #445A38;
+  --fundo: #E6E9D7;
+  --branco: #fff;
+  --texto: #2E2E2E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: var(--fundo);
+  width: 250px;
+  border-right: 3px solid var(--verde-escuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.titulo {
+  text-size-adjust: 15px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: var(--verde-escuro2);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.menu button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--verde-medio);
+  color: var(--branco);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background-color: var(--verde-escuro);
+  transform: scale(1.03);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.month-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.month-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.month-info h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.year {
+  font-size: 2rem;
+}
+
+.month-btn {
+  border: 2px solid var(--verde-escuro);
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--verde-escuro2);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* CALENDÁRIO COMO CARD */
+.calendar {
+  width: 100%;
+  background-color: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--verde-claro);
+  overflow: hidden;
+}
+
+/* grade dias/semana */
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+/* cabeçalho dos dias da semana */
+.weekdays div {
+  background-color: #f4f8ee;
+  padding: 0.8rem 0;
+  font-weight: 600;
+  color: var(--verde-escuro2);
+  border-bottom: 1px solid var(--verde-claro);
+}
+
+/* células dos dias */
+.days div {
+  padding: 1.5rem 0.5rem;
+  min-height: 70px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--branco);
+  color: var(--texto);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+
+  border-right: 1px solid #d7e6c8;
+  border-bottom: 1px solid #d7e6c8;
+}
+
+/* remove borda direita na última coluna */
+.days div:nth-child(7n) {
+  border-right: none;
+}
+
+.days div:hover {
+  background-color: #f2faea;
+  transform: translateY(-1px);
+}
+
+/* dia atual */
+.today {
+  background-color: var(--verde-medio);
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 4px;
+  box-shadow: 0 0 0 2px #e6f2da;
+}
+
+/* MARCAÇÃO DE ANOTAÇÕES */
+.day-has-note::after {
+  content: "•";
+  color: var(--verde-escuro);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+/* MARCAÇÃO DE ATIVIDADE (pontinho em cima) */
+.day-has-activity::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--verde-medio);
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-content textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  background-color: var(--verde-medio);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-actions button:hover {
+  background-color: var(--verde-escuro);
+}
+
+/* lista de atividades no modal */
+.day-tasks {
+  margin-bottom: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #f5f7f0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.day-tasks h4 {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--verde-escuro2);
+}
+
+.day-tasks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.day-tasks li {
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+
+.sem-tarefas {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --------- MODO NOTURNO --------- */
+
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+body.dark-mode .sidebar {
+  background-color: #202320;
+  border-right-color: #445A38;
+}
+
+/* calendário continua CLARO mesmo em dark-mode */
+body.dark-mode .calendar {
+  background-color: #ffffff;
+}
+
+body.dark-mode .weekdays div {
+  background-color: #f4f8ee;
+  color: var(--verde-escuro2);
+}
+
+body.dark-mode .days div {
+  background-color: #ffffff;
+  color: var(--texto);
+  border-right: 1px solid #d7e6c8;
+  border-bottom: 1px solid #d7e6c8;
+}
+
+body.dark-mode .days div:hover {
+  background-color: #f2faea;
+}
+
+body.dark-mode .today {
+  background-color: var(--verde-medio);
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #e6f2da;
+}
+
+body.dark-mode .sem-tarefas {
+  color: #777;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+  }
+  .container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--verde-escuro);
+    padding-bottom: 20px;
+  }
+
+  .sidebar button {
+    width: 80%;
+  }
+
+  .form-area {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .form-area input {
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .form-area input,
+  .sidebar button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+

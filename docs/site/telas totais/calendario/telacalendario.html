@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no-scale" />
+  <title>MediAgenda</title>
+  <link rel="stylesheet" href="calendario.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../../../docs/img/logo1.png" alt="logo MediAgenda">
+      </div>
+
+      <nav class="menu">
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+
+      </nav>
+    </aside>
+    <main id="conteudo"></main>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content" id="conteudo">
+      <header class="calendar-header">
+        <div class="month-info">
+          <span class="month-number" id="month-number"></span>
+          <h2 id="month-name"></h2>
+          <span class="year" id="year"></span>
+        </div>
+
+        <select id="month-select" class="month-btn">
+          <option value="0">Janeiro</option>
+          <option value="1">Fevereiro</option>
+          <option value="2">Março</option>
+          <option value="3">Abril</option>
+          <option value="4">Maio</option>
+          <option value="5">Junho</option>
+          <option value="6">Julho</option>
+          <option value="7">Agosto</option>
+          <option value="8">Setembro</option>
+          <option value="9">Outubro</option>
+          <option value="10">Novembro</option>
+          <option value="11">Dezembro</option>
+        </select>
+      </header>
+
+      <section class="calendar">
+        <div class="weekdays">
+          <div>D</div>
+          <div>S</div>
+          <div>T</div>
+          <div>Q</div>
+          <div>Q</div>
+          <div>S</div>
+          <div>S</div>
+        </div>
+        <div class="days" id="days"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal de anotações -->
+  <div class="modal" id="note-modal">
+    <div class="modal-content">
+      <h3 id="modal-date"></h3>
+      <textarea id="note-text" placeholder="Escreva sua anotação..."></textarea>
+      <div class="modal-actions">
+        <button id="save-note">Salvar</button>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <!-- LISTA DE ATIVIDADES DO DIA -->
+      <div id="day-tasks" class="day-tasks"></div>
+      <div class="modal-actions">
+      </div>
+    </div>
+  </div>
+ 
+  <script src="calendario.js"></script>
+  <script src="router.js" defer></script>
+  <!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+</body>
+
+</html>

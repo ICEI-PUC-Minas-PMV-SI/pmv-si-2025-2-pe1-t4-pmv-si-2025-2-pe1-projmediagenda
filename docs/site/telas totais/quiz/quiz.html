@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediAgenda - Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../../../docs/img/logo1.png" alt="logo MediAgenda">
+      </div>
+
+      <nav class="menu">
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1 class="quiz-title">Quiz</h1>
+
+      <div class="quiz-container">
+
+        <!-- PERGUNTA 1 -->
+        <div class="question" data-question="q1">
+          <p>Quanto você sente dificuldade em manter a concentração nas suas atividades?</p>
+          <div class="scale">
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
+          </div>
+        </div>
+
+        <!-- PERGUNTA 2 -->
+        <div class="question" data-question="q2">
+          <p>Quão intenso está o seu nível de fadiga corporal?</p>
+          <div class="scale">
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
+          </div>
+        </div>
+
+        <!-- PERGUNTA 3 -->
+        <div class="question" data-question="q3">
+          <p>No geral, de 0 a 10, qual o seu nível de exaustão?</p>
+          <div class="scale">
+            <button class="btn red" data-value="0">0</button>
+            <button class="btn red" data-value="1">1</button>
+            <button class="btn orange" data-value="2">2</button>
+            <button class="btn orange" data-value="3">3</button>
+            <button class="btn yellow" data-value="4">4</button>
+            <button class="btn yellow" data-value="5">5</button>
+            <button class="btn lightyellow" data-value="6">6</button>
+            <button class="btn lime" data-value="7">7</button>
+            <button class="btn lightgreen" data-value="8">8</button>
+            <button class="btn green" data-value="9">9</button>
+            <button class="btn darkgreen" data-value="10">10</button>
+          </div>
+        </div>
+
+      </div>
+
+      <button id="btnEnviar" class="send-btn">Enviar Respostas</button>
+
+    </main>
+
+  </div>
+
+  <script src="router.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+</body>
+
+</html>

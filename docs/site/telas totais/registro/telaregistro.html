@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1 " />
+  <title>MediAgenda — Registro de Atividades</title>
+  <link rel="stylesheet" href="telaregistro.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../../../docs/img/logo1.png" alt="Logo MediAgenda" />
+      </div>
+
+      <nav class="menu" aria-label="Menu lateral">
+        <button class="bnt-route" data-route="../menu/menu.html">Menu</button>
+        <button class="bnt-route" data-route="../calendario/telacalendario.html">Calendário</button>
+        <button class="bnt-route" data-route="../registro/telaregistro.html">Registro Agenda</button>
+        <button class="bnt-route" data-route="../quiz/quiz.html">Quiz</button>
+        <button class="bnt-route" data-route="../resultado/resultado.html">Resultado</button>
+        <button class="bnt-route" data-route="../configuracoes/config.html">Configurações</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+
+      <section class="form-container" aria-labelledby="titulo-form">
+        <h1 id="titulo-form">Registro de Atividades</h1>
+
+        <form id="formAtividade" autocomplete="off">
+          <div class="form-group">
+            <label for="titulo">Título da Atividade</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite o título da atividade" />
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" placeholder="Adicione uma descrição"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario" />
+          </div>
+
+          <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" />
+          </div>
+
+          <div class="form-group">
+            <label for="cor">Cor</label>
+            <input type="color" id="cor" name="cor" value="#8AA98A" />
+          </div>
+
+          <button type="submit" class="btn-adicionar">Adicionar Atividade</button>
+        </form>
+      </section>
+
+      <section class="registros-container" aria-labelledby="titulo-lista">
+        <h2 id="titulo-lista">Atividades Registradas</h2>
+        <div class="lista-registros" id="listaRegistros">
+
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="router.js" defer></script>
+<script src="telaregistro.js"></script>
+<!--Modo noturno-->
+    <script>
+  (function () {
+    const THEME_KEY = "modoNoturnoAtivo";
+    const temaSalvo = localStorage.getItem(THEME_KEY) === "true";
+    if (temaSalvo) {
+      document.body.classList.add("dark-mode");
+    }
+  })();
+</script>
+
+</html>
